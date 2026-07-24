@@ -1,159 +1,139 @@
 <template>
-  <div class="home">
-    <header class="header">
+  <div class="home-page">
+    <div class="page-header">
       <h1>🧬 系统发育分析平台</h1>
-      <p class="subtitle">上传 FASTA 文件 → 计算距离矩阵 → 构建系统发育树</p>
-    </header>
-
-    <section class="upload-section">
-      <FileUploader @analyze="handleAnalyze" />
-    </section>
-
-    <!-- 错误提示 -->
-    <div v-if="error" class="error-box">
-      ⚠️ {{ error }}
+      <p>基于 16S rRNA 基因序列的细菌进化关系分析工具</p>
     </div>
 
-    <!-- 分析结果 -->
-    <section v-if="result" class="result-section">
-      <!-- 序列信息 -->
-      <div class="seq-info card">
-        <h3>📊 序列信息</h3>
-        <p>共 <strong>{{ result.sequences.length }}</strong> 条序列，
-           长度 <strong>{{ result.sequences[0]?.length }}</strong> bp，
-           建树方法：<strong>{{ result.method }}</strong></p>
-        <div class="seq-list">
-          <span v-for="seq in result.sequences" :key="seq.name" class="seq-tag">
-            {{ seq.name }} ({{ seq.length }})
-          </span>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon">📂</div>
+        <div class="stat-info">
+          <span class="stat-value">{{ datasets.length }}</span>
+          <span class="stat-label">数据集</span>
         </div>
       </div>
+      <div class="stat-card">
+        <div class="stat-icon">🧪</div>
+        <div class="stat-info">
+          <span class="stat-value">{{ totalSpecies }}</span>
+          <span class="stat-label">物种数</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🌳</div>
+        <div class="stat-info">
+          <span class="stat-value">2</span>
+          <span class="stat-label">建树方法</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">📊</div>
+        <div class="stat-info">
+          <span class="stat-value">3</span>
+          <span class="stat-label">可视化方式</span>
+        </div>
+      </div>
+    </div>
 
-      <MatrixTable :matrix="result.distanceMatrix" />
-      <TreeViewer :newick="result.tree" :method="result.method" />
-    </section>
+    <div class="quick-actions">
+      <h3>快速操作</h3>
+      <div class="action-grid">
+        <router-link to="/data" class="action-card">
+          <span class="action-icon">📤</span>
+          <span class="action-title">上传数据</span>
+          <span class="action-desc">上传 FASTA 序列文件到数据集</span>
+        </router-link>
+        <router-link to="/ncbi" class="action-card">
+          <span class="action-icon">📥</span>
+          <span class="action-title">NCBI 下载</span>
+          <span class="action-desc">从 NCBI 数据库下载 16S 序列</span>
+        </router-link>
+        <router-link to="/analysis" class="action-card">
+          <span class="action-icon">🔬</span>
+          <span class="action-title">开始分析</span>
+          <span class="action-desc">构建系统发育树与距离矩阵</span>
+        </router-link>
+      </div>
+    </div>
 
-    <footer class="footer">
-      <p>PhyloPlatform · 支持 UPGMA / Neighbor-Joining 建树 · p-distance 距离计算</p>
-    </footer>
+    <div class="workflow-section">
+      <h3>分析流程</h3>
+      <div class="workflow-steps">
+        <div class="step"><span class="step-num">1</span><span>上传/下载序列数据</span></div>
+        <div class="step-arrow">→</div>
+        <div class="step"><span class="step-num">2</span><span>选择最优序列</span></div>
+        <div class="step-arrow">→</div>
+        <div class="step"><span class="step-num">3</span><span>计算距离矩阵</span></div>
+        <div class="step-arrow">→</div>
+        <div class="step"><span class="step-num">4</span><span>构建进化树</span></div>
+        <div class="step-arrow">→</div>
+        <div class="step"><span class="step-num">5</span><span>可视化展示</span></div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import FileUploader from '../components/FileUploader.vue'
-import MatrixTable from '../components/MatrixTable.vue'
-import TreeViewer from '../components/TreeViewer.vue'
-import { analyzeFasta, analyzeFastaText } from '../api'
+import { ref, computed, onMounted } from 'vue'
+import { getDatasets } from '../api'
 
-const result = ref(null)
-const error = ref('')
+const datasets = ref([])
+const totalSpecies = ref(0)
 
-async function handleAnalyze(payload, doneCallback) {
-  error.value = ''
-  result.value = null
-
+onMounted(async () => {
   try {
-    let response
-    if (payload.mode === 'file') {
-      response = await analyzeFasta(payload.file, payload.method)
-    } else {
-      response = await analyzeFastaText(payload.text, payload.method)
-    }
-    result.value = response.data
-  } catch (err) {
-    if (err.response && err.response.data && err.response.data.error) {
-      error.value = err.response.data.error
-    } else {
-      error.value = '请求失败，请确认后端服务已启动（端口8080）'
-    }
-  } finally {
-    doneCallback()
-  }
-}
+    const res = await getDatasets()
+    datasets.value = res.data
+  } catch (e) { /* ignore */ }
+})
 </script>
 
 <style scoped>
-.home {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
+.home-page { max-width: 1000px; }
+.page-header { margin-bottom: 32px; }
+.page-header h1 { font-size: 26px; color: #1a2332; margin-bottom: 6px; }
+.page-header p { color: #666; font-size: 14px; }
 
-.header {
-  text-align: center;
-  margin-bottom: 32px;
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 32px; }
+.stat-card {
+  background: white; border-radius: 12px; padding: 20px;
+  display: flex; align-items: center; gap: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04); border: 1px solid #eef2f7;
 }
+.stat-icon { font-size: 28px; }
+.stat-value { font-size: 24px; font-weight: 700; color: #1a2332; display: block; }
+.stat-label { font-size: 12px; color: #888; }
 
-.header h1 {
-  font-size: 28px;
-  color: #2c3e50;
+.quick-actions { margin-bottom: 32px; }
+.quick-actions h3, .workflow-section h3 { font-size: 16px; color: #333; margin-bottom: 14px; }
+.action-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.action-card {
+  background: white; border-radius: 12px; padding: 24px 20px;
+  display: flex; flex-direction: column; gap: 8px;
+  text-decoration: none; border: 1px solid #eef2f7;
+  transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
+.action-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); border-color: #4a90d9; }
+.action-icon { font-size: 28px; }
+.action-title { font-size: 15px; font-weight: 600; color: #1a2332; }
+.action-desc { font-size: 12px; color: #888; }
 
-.subtitle {
-  color: #7f8c8d;
-  margin-top: 8px;
+.workflow-section { background: white; border-radius: 12px; padding: 24px; border: 1px solid #eef2f7; }
+.workflow-steps { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.step {
+  display: flex; align-items: center; gap: 8px;
+  background: #f0f7ff; padding: 10px 16px; border-radius: 8px; font-size: 13px; color: #2c5282;
 }
-
-.upload-section {
-  margin-bottom: 24px;
+.step-num {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: #4a90d9; color: white; display: flex;
+  align-items: center; justify-content: center; font-size: 11px; font-weight: 700;
 }
+.step-arrow { color: #ccc; font-size: 18px; }
 
-.error-box {
-  background: #fff3f3;
-  border: 1px solid #ffcdd2;
-  color: #c62828;
-  padding: 12px 16px;
-  border-radius: 8px;
-  margin-bottom: 16px;
-  font-size: 14px;
-}
-
-.result-section {
-  margin-top: 24px;
-}
-
-.card {
-  background: white;
-  border: 1px solid #e8e8e8;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.seq-info h3 {
-  margin-bottom: 8px;
-  color: #333;
-}
-
-.seq-info p {
-  color: #555;
-  font-size: 14px;
-  margin-bottom: 12px;
-}
-
-.seq-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.seq-tag {
-  background: #f0f7ff;
-  border: 1px solid #d0e3f7;
-  padding: 4px 10px;
-  border-radius: 4px;
-  font-size: 13px;
-  color: #2c6fad;
-  font-family: 'Courier New', monospace;
-}
-
-.footer {
-  text-align: center;
-  margin-top: 48px;
-  padding-top: 20px;
-  border-top: 1px solid #eee;
-  color: #aaa;
-  font-size: 13px;
+@media (max-width: 768px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .action-grid { grid-template-columns: 1fr; }
 }
 </style>
