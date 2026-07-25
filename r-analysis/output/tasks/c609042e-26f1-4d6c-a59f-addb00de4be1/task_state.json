@@ -1,0 +1,32 @@
+{
+  "taskId" : "c609042e-26f1-4d6c-a59f-addb00de4be1",
+  "status" : "success",
+  "result" : {
+    "status" : "success",
+    "organism_type" : "virus",
+    "input" : "sequences.fasta",
+    "tree" : "tree.nwk",
+    "visualization" : "circular_tree_final.png",
+    "metadata" : "metadata.csv",
+    "statistics" : {
+      "sequence_count" : 4,
+      "method" : "Maximum Likelihood",
+      "model" : "JC69",
+      "matrix_file" : "distance_matrix.csv",
+      "image_file" : "tree.png",
+      "annotation_rings" : [ "Country", "Year" ]
+    },
+    "error_message" : "",
+    "error_code" : "",
+    "treeFile" : "D:\\Projects\\phylo-platform\\r-analysis\\output\\tasks\\c609042e-26f1-4d6c-a59f-addb00de4be1\\tree.nwk",
+    "imageFile" : "D:\\Projects\\phylo-platform\\r-analysis\\output\\tasks\\c609042e-26f1-4d6c-a59f-addb00de4be1\\circular_tree_final.png",
+    "sequenceCount" : 4,
+    "method" : "Maximum Likelihood",
+    "model" : "JC69",
+    "ok" : true
+  },
+  "error_code" : "",
+  "error_message" : "",
+  "organism_type" : "virus",
+  "ok" : true
+}

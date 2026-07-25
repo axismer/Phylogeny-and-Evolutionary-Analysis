@@ -1,0 +1,11 @@
+{
+  "input": "sequences.fasta",
+  "sequence_count": 6,
+  "method": "Maximum Likelihood",
+  "model": "JC69",
+  "bootstrap": 100,
+  "tree_file": "tree.nwk",
+  "matrix_file": "distance_matrix.csv",
+  "image_file": "tree.png",
+  "status": "success"
+}

@@ -1,0 +1,12 @@
+[run_analysis] organism_type=bacteria
+[run_analysis] fasta=D:/Projects/phylo-platform/r-analysis/test-data/bacteria/valid/valid.fasta
+[run_analysis] metadata=D:/Projects/phylo-platform/r-analysis/test-data/bacteria/valid/metadata.csv
+[run_analysis] output=D:/Projects/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case2_bacteria_valid
+[strategy_runner] start organism_type=bacteria
+[strategy_runner] fasta=D:/Projects/phylo-platform/r-analysis/test-data/bacteria/valid/valid.fasta
+[strategy_runner] output=D:/Projects/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case2_bacteria_valid
+[BacteriaStrategy] 16S 长度启发式通过（median=1499 bp）；未做物种分类鉴定。
+[bacteria] taxonomy_level=genus 列不存在；回退使用 legacy 列 taxonomy（兼容旧 metadata）
+[strategy_runner] tip match ok: matched=6 missing=0
+[strategy_runner] finished status=success
+[run_analysis] status=success

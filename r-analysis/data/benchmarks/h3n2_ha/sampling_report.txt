@@ -1,0 +1,31 @@
+timestamp=2026-07-24 10:39:26
+target_n=220
+per_stratum=11
+Americas/2005-2008=11
+Americas/2009-2012=11
+Americas/2013-2016=11
+Americas/2017-2020=1
+Americas/2021-2024=11
+Asia/2005-2008=11
+Asia/2009-2012=11
+Asia/2013-2016=11
+Asia/2017-2020=11
+Asia/2021-2024=0_filter
+Europe/2005-2008=1
+Europe/2009-2012=3
+Europe/2013-2016=11
+Europe/2017-2020=11
+Europe/2021-2024=11
+Oceania/2005-2008=2
+Oceania/2009-2012=3
+Oceania/2013-2016=0_filter
+Oceania/2017-2020=11
+Oceania/2021-2024=0_filter
+final_n=167
+length_range=1680-1762
+year_span=2007-2024
+n_years=15
+n_countries=15
+regions=Americas=55, Asia=55, Europe=39, Oceania=18
+years=2007=2, 2008=23, 2009=5, 2010=10, 2011=15, 2014=4, 2015=18, 2016=11, 2017=7, 2018=12, 2019=25, 2021=2, 2022=2, 2023=18, 2024=13
+countries=Australia=18, Brazil=7, Canada=5, China=16, Denmark=3, France=10, Germany=23, Hong Kong=16, Italy=1, Mexico=2, Singapore=11, South Korea=12, Sweden=1, United Kingdom=1, USA=41

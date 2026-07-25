@@ -1,0 +1,9 @@
+Bacteria real-user 16S validation dataset
+Downloaded: 2026-07-24
+Source: NCBI Nucleotide (RefSeq 16S rRNA) via E-utilities efetch
+Endpoint: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi
+n_sequences: 35
+FASTA tip labels: user-style sample_id (S001..)
+metadata sample_id must match FASTA headers 1:1
+Required pipeline columns: sample_id, taxonomy, environment, source, resistance
+Note: resistance is schema-required by BacteriaStrategy; derived from organism heuristics.

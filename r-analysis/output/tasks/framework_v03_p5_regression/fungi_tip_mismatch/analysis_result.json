@@ -1,0 +1,12 @@
+{
+  "status": "error",
+  "organism_type": "fungi",
+  "input": "sequences.fasta",
+  "tree": "tree.nwk",
+  "visualization": "",
+  "metadata": "metadata.csv",
+  "statistics": {},
+  "error_message": "FungiStrategy: metadata sample_id/label 与 tree tip 不匹配，缺失: NR_111116",
+  "tree_file": "tree.nwk",
+  "error_code": "TIP_METADATA_MISMATCH"
+}

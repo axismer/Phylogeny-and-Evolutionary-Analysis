@@ -1,0 +1,5 @@
+[run_analysis] organism_type=virus
+[run_analysis] fasta=D:/Projects/phylo-platform/r-analysis/test-data/fixtures/h3n2_na_20.fasta
+[run_analysis] metadata=<none>
+[run_analysis] output=D:/Projects/phylo-platform/r-analysis/output/tasks/bacteria_validation/virus_smoke
+[run_analysis] status=success

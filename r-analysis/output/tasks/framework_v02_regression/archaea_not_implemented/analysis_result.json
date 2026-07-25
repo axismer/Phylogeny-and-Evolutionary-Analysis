@@ -1,0 +1,15 @@
+{
+  "status": "not_implemented",
+  "organism_type": "archaea",
+  "input": "",
+  "tree": "",
+  "visualization": "",
+  "metadata": "",
+  "statistics": {
+    "message": "ArchaeaPhyloStrategy 仅完成接口骨架。",
+    "required_files": ["strategies/archaea/archaea_strategy.R (run)", "strategies/archaea/archaea_annotation.R"]
+  },
+  "error_message": "",
+  "tree_file": "",
+  "error_code": "UNSUPPORTED_ORGANISM"
+}

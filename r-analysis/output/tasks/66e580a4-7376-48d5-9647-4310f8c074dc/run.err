@@ -1,0 +1,10 @@
+[run_analysis] organism_type=virus
+[run_analysis] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/sequences.fasta
+[run_analysis] metadata=D:/Projects/phylo-platform/r-analysis/input/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/metadata.csv
+[run_analysis] output=D:/Projects/phylo-platform/r-analysis/output/tasks/66e580a4-7376-48d5-9647-4310f8c074dc
+[strategy_runner] start organism_type=virus
+[strategy_runner] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/sequences.fasta
+[strategy_runner] output=D:/Projects/phylo-platform/r-analysis/output/tasks/66e580a4-7376-48d5-9647-4310f8c074dc
+[strategy_runner] tip match ok: matched=4 missing=0
+[strategy_runner] finished status=success
+[run_analysis] status=success

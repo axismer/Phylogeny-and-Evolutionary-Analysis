@@ -1,0 +1,32 @@
+======== H3N2 HA benchmark report ========
+tip_count=167
+n_years=15
+year_span=2007-2024
+year_distribution:
+
+2007 2021 2022 2014 2009 2017 2010 2016 2018 2024 2011 2015 2023 2008 2019 
+   2    2    2    4    5    7   10   11   12   13   15   18   18   23   25 
+region_distribution_(Country_column_for_ggtree):
+
+ Oceania   Europe     Asia Americas 
+      18       38       55       56 
+n_countries=15
+country_distribution:
+
+         Italy         Sweden United Kingdom         Mexico        Denmark 
+             1              1              1              2              3 
+        Canada         Brazil         France      Singapore    South Korea 
+             5              7             10             11             12 
+         China      Hong Kong      Australia        Germany            USA 
+            16             16             18             23             41 
+branch_length_stats:
+  n=329
+  min=0e+00
+  max=0.10539272
+  mean=0.0022002982
+  median=0.00058812026
+  zero_count=30
+  near_zero_1e-8=30
+  zero_frac=0.09119
+circular_png=D:/Projects/phylo-platform/r-analysis/output/h3n2_ha_benchmark/circular_tree_distance.png
+png_exists=TRUE

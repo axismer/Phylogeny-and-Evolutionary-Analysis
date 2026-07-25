@@ -1,0 +1,80 @@
+{
+  "tip_count": 167,
+  "tree_file": "D:/Projects/phylo-platform/r-analysis/output/tasks/migration_verify/tree.nwk",
+  "tree_from_real_nwk": true,
+  "midpoint_root_display_only": true,
+  "annotation_method": "geom_fruit",
+  "annotation_geom": "geom_tile",
+  "annotation_count": 2,
+  "annotation_rings": ["Country", "Year"],
+  "center_crop": false,
+  "branch_length": {
+    "min": 0,
+    "max": 0.1054,
+    "mean": 0.0022,
+    "median": 0.0006,
+    "unit": "substitutions/site"
+  },
+  "root_to_tip_depth": {
+    "min": 0.0659,
+    "max": 0.1348,
+    "median": 0.0997
+  },
+  "layout": {
+    "metrics": {
+      "tree_radius": 0.1348,
+      "annotation_radius": 0.1726,
+      "tree_fill_ratio": 0.7812,
+      "center_crop": 0,
+      "ring_width": 0.0135,
+      "ring_gap": 0.0054,
+      "ring_width_frac": 0.1,
+      "ring_gap_frac": 0.04,
+      "scale_width": 0.02,
+      "open_angle": 12,
+      "x_expand_outer": 0.06
+    },
+    "branch_length_scale": 0.02,
+    "center_crop": false,
+    "note": "Real edge.length preserved; no center crop; metadata via geom_fruit(geom_tile) rings"
+  },
+  "distance_rings": {
+    "values": [0.02, 0.04, 0.06, 0.08, 0.1, 0.12],
+    "step": 0.02,
+    "count": 6,
+    "label": "Evolutionary distance",
+    "unit": "substitutions/site"
+  },
+  "bootstrap": {
+    "present": true,
+    "threshold": 70,
+    "n_total": 152,
+    "n_displayed": 79,
+    "n_hidden_below_threshold": 73
+  },
+  "metadata_fields": ["label", "Country", "Year"],
+  "color_mapping": {
+    "Country": {
+      "Americas": "#1B9E77",
+      "Asia": "#7570B3",
+      "Europe": "#E6AB02",
+      "Oceania": "#A6761D"
+    },
+    "Year": {
+      "type": "continuous",
+      "gradient": ["#313695", "#4575B4", "#74ADD1", "#ABD9E9", "#FEE090", "#FDAE61", "#F46D43", "#D73027", "#A50026"],
+      "limits": [2007, 2024],
+      "data_range": [2007, 2024],
+      "design_reference": [2007, 2024],
+      "mapping": "numeric Year → cool(early) to warm(recent)"
+    }
+  },
+  "outputs": {
+    "png": "D:/Projects/phylo-platform/r-analysis/output/tasks/migration_verify/circular_tree_final.png",
+    "pdf": "D:/Projects/phylo-platform/r-analysis/output/tasks/migration_verify/circular_tree_final.pdf",
+    "dpi_png": 300
+  },
+  "status": "success",
+  "bootstrap_present": true,
+  "bootstrap_displayed": 79
+}

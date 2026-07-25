@@ -1,0 +1,5 @@
+"sample_id","organism_type","collection_date","location","host","segment","variant"
+"A_Hawaii_02_2013","virus","2013","Hawaii","human","NA","H3N2"
+"A_Boston_DOA2_107_2012","virus","2012","Boston","human","NA","H3N2"
+"A_Oregon_15_2009","virus","2009","Oregon","human","NA","H3N2"
+"A_Hong_Kong_H090_695_V10_2009","virus","2009","HongKong","human","NA","H3N2"

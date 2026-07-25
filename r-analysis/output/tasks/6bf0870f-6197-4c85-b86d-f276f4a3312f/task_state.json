@@ -1,0 +1,31 @@
+{
+  "taskId" : "6bf0870f-6197-4c85-b86d-f276f4a3312f",
+  "status" : "success",
+  "result" : {
+    "status" : "success",
+    "organism_type" : "fungi",
+    "input" : "sequences.fasta",
+    "tree" : "tree.nwk",
+    "visualization" : "circular_tree_final.png",
+    "metadata" : "metadata.csv",
+    "statistics" : {
+      "sequence_count" : 5,
+      "method" : "Maximum Likelihood",
+      "model" : "JC69",
+      "matrix_file" : "distance_matrix.csv",
+      "image_file" : "tree.png",
+      "annotation_rings" : [ "taxonomy", "host" ],
+      "marker" : "ITS"
+    },
+    "error_message" : "",
+    "error_code" : "",
+    "treeFile" : "D:\\Projects\\phylo-platform\\r-analysis\\output\\tasks\\6bf0870f-6197-4c85-b86d-f276f4a3312f\\tree.nwk",
+    "imageFile" : "D:\\Projects\\phylo-platform\\r-analysis\\output\\tasks\\6bf0870f-6197-4c85-b86d-f276f4a3312f\\circular_tree_final.png",
+    "sequenceCount" : 5,
+    "method" : "Maximum Likelihood",
+    "model" : "JC69"
+  },
+  "error_code" : "",
+  "error_message" : "",
+  "organism_type" : "fungi"
+}

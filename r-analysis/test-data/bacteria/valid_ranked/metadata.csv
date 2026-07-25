@@ -1,0 +1,7 @@
+"sample_id","organism_type","collection_date","location","host","taxonomy","environment","source","resistance","genus","phylum"
+"NR_074540","bacteria",2020,"RefSeq",NA,"Bacillus","soil","isolate","none","Bacillus","Firmicutes"
+"NR_114874","bacteria",2020,"RefSeq",NA,"Parageobacillus","thermal","isolate","none","Parageobacillus","Firmicutes"
+"NR_075032","bacteria",2020,"RefSeq",NA,"Lactobacillus","food","isolate","none","Lactobacillus","Firmicutes"
+"NR_043401","bacteria",2020,"RefSeq",NA,"Priestia","soil","isolate","none","Priestia","Firmicutes"
+"NR_044887","bacteria",2020,"RefSeq",NA,"Micromonospora","environmental","isolate","none","Micromonospora","Actinobacteria"
+"NR_074979","bacteria",2020,"RefSeq",NA,"Trichlorobacter","environmental","isolate","none","Trichlorobacter","Actinobacteria"

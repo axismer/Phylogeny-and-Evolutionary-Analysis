@@ -1,0 +1,12 @@
+{
+  "status": "not_implemented",
+  "organism_type": "fungi_unknown_xyz",
+  "input": "sequences.fasta",
+  "tree": "",
+  "visualization": "",
+  "metadata": "",
+  "statistics": {},
+  "error_message": "未知 --type: fungi_unknown_xyz；已注册: archaea, bacteria, eukaryote, fungi, virus",
+  "tree_file": "",
+  "error_code": "UNSUPPORTED_ORGANISM"
+}

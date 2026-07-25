@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-07-24T17:19:27+0800",
+  "contract": "docs/analysis_result_contract.md",
+  "cases": [
+    {
+      "case_id": "virus_valid",
+      "ok": true,
+      "exit_code": 0,
+      "status": "success",
+      "error_message": "",
+      "notes": "PASS (status=success)"
+    },
+    {
+      "case_id": "virus_invalid_fasta",
+      "ok": true,
+      "exit_code": 1,
+      "status": "error",
+      "error_message": "VirusStrategy: FASTA 格式无效（首行应以 > 开头）",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "virus_metadata_mismatch",
+      "ok": true,
+      "exit_code": 1,
+      "status": "error",
+      "error_message": "VirusStrategy: metadata label/sample_id 与 tree tip 不匹配，缺失: A_Hong_Kong_H090_695_V10_2009, A_Oregon_15_2009, A_Boston_DOA2_107_2012, A_Hawaii_02_2013",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "bacteria_valid",
+      "ok": true,
+      "exit_code": 0,
+      "status": "success",
+      "error_message": "",
+      "notes": "PASS (status=success)"
+    },
+    {
+      "case_id": "bacteria_invalid_metadata",
+      "ok": true,
+      "exit_code": 1,
+      "status": "error",
+      "error_message": "Bacteria metadata 缺少必需列: resistance",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "bacteria_tip_mismatch",
+      "ok": true,
+      "exit_code": 1,
+      "status": "error",
+      "error_message": "BacteriaStrategy: metadata sample_id/label 与 tree tip 不匹配，缺失: NR_044887, NR_074979, NR_075032, NR_114874, NR_043401, NR_074540",
+      "notes": "PASS"
+    }
+  ]
+}

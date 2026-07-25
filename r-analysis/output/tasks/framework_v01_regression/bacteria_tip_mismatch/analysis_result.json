@@ -1,0 +1,11 @@
+{
+  "status": "error",
+  "organism_type": "bacteria",
+  "input": "sequences.fasta",
+  "tree": "tree.nwk",
+  "visualization": "",
+  "metadata": "metadata.csv",
+  "statistics": {},
+  "error_message": "BacteriaStrategy: metadata sample_id/label 与 tree tip 不匹配，缺失: NR_044887, NR_074979, NR_075032, NR_114874, NR_043401, NR_074540",
+  "tree_file": "tree.nwk"
+}

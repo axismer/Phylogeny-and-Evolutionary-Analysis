@@ -1,0 +1,6 @@
+"sample_id","organism_type","taxonomy","host","substrate","location","collection_date"
+"NR_111116","fungi","Pichia","human_clinical","clinical_sample","type_material","RefSeq_type_material"
+"NR_111119","fungi","Sporobolomyces","unknown","unknown","culture_collection","RefSeq_type_material"
+"NR_111121","fungi","Nakaseomyces","human_clinical","clinical_sample","public_refseq","RefSeq_type_material"
+"NR_111130","fungi","Exophiala","human_clinical","clinical_sample","laboratory_isolate","RefSeq_type_material"
+"NR_111148","fungi","Taphrina","unknown","unknown","type_material","RefSeq_type_material"

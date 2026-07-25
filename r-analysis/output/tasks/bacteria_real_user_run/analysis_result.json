@@ -1,0 +1,22 @@
+{
+  "status": "success",
+  "organism_type": "bacteria",
+  "tree_file": "tree.nwk",
+  "visualization": "circular_tree_final.png",
+  "metadata": "metadata.csv",
+  "statistics": {
+    "sequence_count": 35,
+    "method": "Maximum Likelihood",
+    "model": "JC69",
+    "input": "sequences.fasta",
+    "matrix_file": "distance_matrix.csv",
+    "image_file": "tree.png",
+    "annotation_rings": ["taxonomy", "environment", "resistance"]
+  },
+  "input": "sequences.fasta",
+  "sequence_count": 35,
+  "method": "Maximum Likelihood",
+  "model": "JC69",
+  "matrix_file": "distance_matrix.csv",
+  "image_file": "tree.png"
+}

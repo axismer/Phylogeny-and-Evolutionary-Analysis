@@ -1,0 +1,12 @@
+{
+  "status": "error",
+  "organism_type": "fungi",
+  "input": "sequences.fasta",
+  "tree": "",
+  "visualization": "",
+  "metadata": "",
+  "statistics": {},
+  "error_message": "FungiStrategy: ITS 分析至少需要 3 条序列，当前: 2",
+  "tree_file": "",
+  "error_code": "TOO_FEW_SEQUENCE"
+}

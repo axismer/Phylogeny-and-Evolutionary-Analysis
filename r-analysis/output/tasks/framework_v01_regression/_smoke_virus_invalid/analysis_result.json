@@ -1,0 +1,11 @@
+{
+  "status": "error",
+  "organism_type": "virus",
+  "input": "bad.fasta",
+  "tree": "",
+  "visualization": "",
+  "metadata": "",
+  "statistics": {},
+  "error_message": "VirusStrategy: FASTA 格式无效（首行应以 > 开头）",
+  "tree_file": ""
+}

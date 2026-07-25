@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "organism_type": "virus",
+  "tree_file": "tree.nwk",
+  "visualization": "",
+  "metadata": "",
+  "statistics": {
+    "sequence_count": 19,
+    "method": "Maximum Likelihood",
+    "model": "JC69",
+    "input": "h3n2_na_20.fasta",
+    "matrix_file": "distance_matrix.csv",
+    "image_file": "tree.png"
+  },
+  "input": "h3n2_na_20.fasta",
+  "sequence_count": 19,
+  "method": "Maximum Likelihood",
+  "model": "JC69",
+  "matrix_file": "distance_matrix.csv",
+  "image_file": "tree.png"
+}

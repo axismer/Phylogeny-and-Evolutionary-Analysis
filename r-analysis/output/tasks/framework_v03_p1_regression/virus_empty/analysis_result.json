@@ -1,0 +1,12 @@
+{
+  "status": "error",
+  "organism_type": "virus",
+  "input": "empty.fasta",
+  "tree": "",
+  "visualization": "",
+  "metadata": "",
+  "statistics": {},
+  "error_message": "VirusStrategy: FASTA 为空（无序列记录）",
+  "tree_file": "",
+  "error_code": "EMPTY_FASTA"
+}

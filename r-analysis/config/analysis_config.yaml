@@ -1,0 +1,79 @@
+# analysis_config.yaml — 多生物类型分析默认配置
+#
+# 被 runners/run_analysis.R 读取（若存在 yaml 包则解析；否则使用内置默认）。
+# 不改变 engine/phylogenetic_tree.R 的冻结算法；Virus 的 model/method 在此仅作声明。
+
+version: "0.1"
+
+framework:
+  # 统一 CLI 入口（未来 Spring Boot 主契约）
+  entrypoint: "runners/run_analysis.R"
+  # 现有冻结引擎（保持可直接调用）
+  legacy_tree_engine: "engine/phylogenetic_tree.R"
+  legacy_viz_engine: "engine/ggtree_visualization.R"
+  result_filename: "analysis_result.json"
+
+input:
+  fasta_name: "sequence.fasta"
+  metadata_name: "metadata.csv"
+
+output:
+  tree_file: "tree.nwk"
+  distance_matrix: "distance_matrix.csv"
+  tree_image: "tree.png"
+  visualization: "circular_tree_final.png"
+  visualization_pdf: "circular_tree_final.pdf"
+  metadata: "metadata.csv"
+
+strategies:
+  virus:
+    enabled: true
+    status: "production_via_legacy_engine"
+    tree:
+      method: "Maximum Likelihood"
+      model: "JC69"
+      start_tree: "NJ"
+      bootstrap: true
+    distance:
+      model: "K80"
+    annotation:
+      rings: ["Country", "Year"]
+      bootstrap_threshold: 70
+
+  bacteria:
+    enabled: true
+    status: "production_via_legacy_engine"
+    # 环 1 分类粒度：phylum|class|order|family|genus|species|taxonomy
+    # 代码缺省（无本键）为 taxonomy；此处推荐 genus。
+    # 若 metadata 无对应列则回退 legacy `taxonomy`（旧表兼容，不改默认可见行为）。
+    # 不实现分类鉴定；层级列须用户自备。
+    taxonomy_level: genus
+    tree:
+      method: "Maximum Likelihood"
+      model: "JC69"
+      start_tree: "NJ"
+      bootstrap: true
+    distance:
+      model: "K80"
+    annotation:
+      # 环 1 实际字段由 taxonomy_level 解析（可回退 taxonomy）
+      rings: ["taxonomy_level", "environment", "resistance"]
+      bootstrap_threshold: 70
+
+  archaea:
+    enabled: false
+    status: "not_implemented"
+    tree:
+      method: "Maximum Likelihood"
+      model: "JC69"
+    annotation:
+      rings: ["habitat", "temperature"]
+
+  eukaryote:
+    enabled: false
+    status: "not_implemented"
+    tree:
+      method: "Maximum Likelihood"
+      model: "JC69"
+    annotation:
+      rings: ["taxonomy", "life_stage"]

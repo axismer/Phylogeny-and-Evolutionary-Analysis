@@ -1,0 +1,12 @@
+{
+  "status": "error",
+  "organism_type": "virus",
+  "input": "sequences.fasta",
+  "tree": "",
+  "visualization": "",
+  "metadata": "",
+  "statistics": {},
+  "error_message": "VirusStrategy: DNA 字符合法性失败，发现: X",
+  "tree_file": "",
+  "error_code": "INVALID_DNA"
+}

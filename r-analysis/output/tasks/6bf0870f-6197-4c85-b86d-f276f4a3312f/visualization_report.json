@@ -1,0 +1,13 @@
+{
+  "organism_type": "fungi",
+  "marker": "ITS",
+  "tip_count": 5,
+  "tree_file": "D:/Projects/phylo-platform/r-analysis/output/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/tree.nwk",
+  "annotation_rings": ["taxonomy", "host"],
+  "annotation_method": "geom_fruit",
+  "annotation_geom": "geom_tile",
+  "png": "circular_tree_final.png",
+  "pdf": "circular_tree_final.pdf",
+  "scale_width": 0.1,
+  "status": "success"
+}

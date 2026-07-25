@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.phylo.platform.service.task.FrameworkV042TaskRegressionTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-07-25T01:37:57.550Z" hostname="LAPTOP-II2F9SP5" time="25.648">
+  <properties/>
+  <testcase name="case1_virusUploadSuccess()" classname="com.phylo.platform.service.task.FrameworkV042TaskRegressionTest" time="6.886"/>
+  <testcase name="case2_fungiUploadSuccess()" classname="com.phylo.platform.service.task.FrameworkV042TaskRegressionTest" time="10.849"/>
+  <testcase name="case3_missingFasta()" classname="com.phylo.platform.service.task.FrameworkV042TaskRegressionTest" time="0.0"/>
+  <testcase name="case4_missingMetadata()" classname="com.phylo.platform.service.task.FrameworkV042TaskRegressionTest" time="0.596"/>
+  <testcase name="case5_unknownOrganism()" classname="com.phylo.platform.service.task.FrameworkV042TaskRegressionTest" time="0.386"/>
+  <testcase name="case6_concurrentTasksDirectoryIsolation()" classname="com.phylo.platform.service.task.FrameworkV042TaskRegressionTest" time="6.928"/>
+  <system-out><![CDATA[09:37:57.598 [Test worker] INFO com.phylo.platform.service.task.DefaultAnalysisTaskService -- 任务 f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99 开始同步分析 organismType=virus
+09:37:57.602 [Test worker] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- 启动 R Framework: cwd=D:\Projects\phylo-platform\r-analysis cmd=[D:\R-4.4.2\bin\Rscript.exe, runners/run_analysis.R, --type, virus, --fasta, D:\Projects\phylo-platform\r-analysis\input\tasks\f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99\sequences.fasta, --metadata, D:\Projects\phylo-platform\r-analysis\input\tasks\f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99\metadata.csv, --output, D:\Projects\phylo-platform\r-analysis\output\tasks\f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99]
+09:38:04.391 [Test worker] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript exitCode=0
+09:38:04.391 [Test worker] WARN com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript stderr:
+[run_analysis] organism_type=virus
+[run_analysis] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/sequences.fasta
+[run_analysis] metadata=D:/Projects/phylo-platform/r-analysis/input/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/metadata.csv
+[run_analysis] output=D:/Projects/phylo-platform/r-analysis/output/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99
+[strategy_runner] start organism_type=virus
+[strategy_runner] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/sequences.fasta
+[strategy_runner] output=D:/Projects/phylo-platform/r-analysis/output/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99
+[strategy_runner] tip match ok: matched=4 missing=0
+[strategy_runner] finished status=success
+[run_analysis] status=success
+
+09:38:04.441 [Test worker] INFO com.phylo.platform.service.task.DefaultAnalysisTaskService -- 任务 6bf0870f-6197-4c85-b86d-f276f4a3312f 开始同步分析 organismType=fungi
+09:38:04.442 [Test worker] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- 启动 R Framework: cwd=D:\Projects\phylo-platform\r-analysis cmd=[D:\R-4.4.2\bin\Rscript.exe, runners/run_analysis.R, --type, fungi, --fasta, D:\Projects\phylo-platform\r-analysis\input\tasks\6bf0870f-6197-4c85-b86d-f276f4a3312f\sequences.fasta, --metadata, D:\Projects\phylo-platform\r-analysis\input\tasks\6bf0870f-6197-4c85-b86d-f276f4a3312f\metadata.csv, --output, D:\Projects\phylo-platform\r-analysis\output\tasks\6bf0870f-6197-4c85-b86d-f276f4a3312f]
+09:38:15.285 [Test worker] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript exitCode=0
+09:38:15.285 [Test worker] WARN com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript stderr:
+[run_analysis] organism_type=fungi
+[run_analysis] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/sequences.fasta
+[run_analysis] metadata=D:/Projects/phylo-platform/r-analysis/input/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/metadata.csv
+[run_analysis] output=D:/Projects/phylo-platform/r-analysis/output/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f
+[strategy_runner] start organism_type=fungi
+[strategy_runner] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/sequences.fasta
+[strategy_runner] output=D:/Projects/phylo-platform/r-analysis/output/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f
+[strategy_runner] tip match ok: matched=5 missing=0
+[strategy_runner] finished status=success
+[run_analysis] status=success
+
+09:38:15.291 [Test worker] INFO com.phylo.platform.service.task.DefaultAnalysisTaskService -- 任务 965af817-8975-4082-8145-e8768863e256 开始同步分析 organismType=bacteria
+09:38:15.292 [Test worker] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- 启动 R Framework: cwd=D:\Projects\phylo-platform\r-analysis cmd=[D:\R-4.4.2\bin\Rscript.exe, runners/run_analysis.R, --type, bacteria, --fasta, D:\Projects\phylo-platform\r-analysis\input\tasks\965af817-8975-4082-8145-e8768863e256\sequences.fasta, --output, D:\Projects\phylo-platform\r-analysis\output\tasks\965af817-8975-4082-8145-e8768863e256]
+09:38:15.881 [Test worker] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript exitCode=1
+09:38:15.881 [Test worker] WARN com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript stderr:
+[run_analysis] organism_type=bacteria
+[run_analysis] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/965af817-8975-4082-8145-e8768863e256/sequences.fasta
+[run_analysis] metadata=<none>
+[run_analysis] output=D:/Projects/phylo-platform/r-analysis/output/tasks/965af817-8975-4082-8145-e8768863e256
+[strategy_runner] start organism_type=bacteria
+[strategy_runner] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/965af817-8975-4082-8145-e8768863e256/sequences.fasta
+[strategy_runner] output=D:/Projects/phylo-platform/r-analysis/output/tasks/965af817-8975-4082-8145-e8768863e256
+[BacteriaStrategy] 16S 长度启发式通过（median=1499 bp）；未做物种分类鉴定。
+[strategy_runner] ERROR: BacteriaStrategy: 第一版要求提供 --metadata code=MISSING_METADATA_ARGUMENT
+ERROR: BacteriaStrategy: 第一版要求提供 --metadata
+
+09:38:15.886 [Test worker] INFO com.phylo.platform.service.task.DefaultAnalysisTaskService -- 任务 0673cb72-2ce3-4400-9bed-0094d6ec07fa 开始同步分析 organismType=unknown_organism_xyz
+09:38:15.887 [Test worker] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- 启动 R Framework: cwd=D:\Projects\phylo-platform\r-analysis cmd=[D:\R-4.4.2\bin\Rscript.exe, runners/run_analysis.R, --type, unknown_organism_xyz, --fasta, D:\Projects\phylo-platform\r-analysis\input\tasks\0673cb72-2ce3-4400-9bed-0094d6ec07fa\sequences.fasta, --output, D:\Projects\phylo-platform\r-analysis\output\tasks\0673cb72-2ce3-4400-9bed-0094d6ec07fa]
+09:38:16.269 [Test worker] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript exitCode=2
+09:38:16.269 [Test worker] WARN com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript stderr:
+[run_analysis] status=not_implemented error_code=UNSUPPORTED_ORGANISM
+
+09:38:16.276 [ForkJoinPool.commonPool-worker-1] INFO com.phylo.platform.service.task.DefaultAnalysisTaskService -- 任务 66e580a4-7376-48d5-9647-4310f8c074dc 开始同步分析 organismType=virus
+09:38:16.277 [ForkJoinPool.commonPool-worker-2] INFO com.phylo.platform.service.task.DefaultAnalysisTaskService -- 任务 01833c73-2c01-4b2d-b684-3025e32c361c 开始同步分析 organismType=virus
+09:38:16.277 [ForkJoinPool.commonPool-worker-1] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- 启动 R Framework: cwd=D:\Projects\phylo-platform\r-analysis cmd=[D:\R-4.4.2\bin\Rscript.exe, runners/run_analysis.R, --type, virus, --fasta, D:\Projects\phylo-platform\r-analysis\input\tasks\66e580a4-7376-48d5-9647-4310f8c074dc\sequences.fasta, --metadata, D:\Projects\phylo-platform\r-analysis\input\tasks\66e580a4-7376-48d5-9647-4310f8c074dc\metadata.csv, --output, D:\Projects\phylo-platform\r-analysis\output\tasks\66e580a4-7376-48d5-9647-4310f8c074dc]
+09:38:16.277 [ForkJoinPool.commonPool-worker-2] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- 启动 R Framework: cwd=D:\Projects\phylo-platform\r-analysis cmd=[D:\R-4.4.2\bin\Rscript.exe, runners/run_analysis.R, --type, virus, --fasta, D:\Projects\phylo-platform\r-analysis\input\tasks\01833c73-2c01-4b2d-b684-3025e32c361c\sequences.fasta, --metadata, D:\Projects\phylo-platform\r-analysis\input\tasks\01833c73-2c01-4b2d-b684-3025e32c361c\metadata.csv, --output, D:\Projects\phylo-platform\r-analysis\output\tasks\01833c73-2c01-4b2d-b684-3025e32c361c]
+09:38:23.089 [ForkJoinPool.commonPool-worker-1] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript exitCode=0
+09:38:23.089 [ForkJoinPool.commonPool-worker-1] WARN com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript stderr:
+[run_analysis] organism_type=virus
+[run_analysis] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/sequences.fasta
+[run_analysis] metadata=D:/Projects/phylo-platform/r-analysis/input/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/metadata.csv
+[run_analysis] output=D:/Projects/phylo-platform/r-analysis/output/tasks/66e580a4-7376-48d5-9647-4310f8c074dc
+[strategy_runner] start organism_type=virus
+[strategy_runner] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/sequences.fasta
+[strategy_runner] output=D:/Projects/phylo-platform/r-analysis/output/tasks/66e580a4-7376-48d5-9647-4310f8c074dc
+[strategy_runner] tip match ok: matched=4 missing=0
+[strategy_runner] finished status=success
+[run_analysis] status=success
+
+09:38:23.197 [ForkJoinPool.commonPool-worker-2] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript exitCode=0
+09:38:23.197 [ForkJoinPool.commonPool-worker-2] WARN com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript stderr:
+[run_analysis] organism_type=virus
+[run_analysis] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/sequences.fasta
+[run_analysis] metadata=D:/Projects/phylo-platform/r-analysis/input/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/metadata.csv
+[run_analysis] output=D:/Projects/phylo-platform/r-analysis/output/tasks/01833c73-2c01-4b2d-b684-3025e32c361c
+[strategy_runner] start organism_type=virus
+[strategy_runner] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/sequences.fasta
+[strategy_runner] output=D:/Projects/phylo-platform/r-analysis/output/tasks/01833c73-2c01-4b2d-b684-3025e32c361c
+[strategy_runner] tip match ok: matched=4 missing=0
+[strategy_runner] finished status=success
+[run_analysis] status=success
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

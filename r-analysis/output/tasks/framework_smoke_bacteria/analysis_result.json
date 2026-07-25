@@ -1,0 +1,11 @@
+{
+  "status": "not_implemented",
+  "organism_type": "bacteria",
+  "tree_file": "",
+  "visualization": "",
+  "metadata": "",
+  "statistics": {
+    "message": "BacteriaPhyloStrategy 仅完成接口骨架。 请实现 bacteria_strategy.R::run() 及比对/建树/可视化管线。",
+    "required_files": ["strategies/bacteria/bacteria_strategy.R (run)", "strategies/bacteria/bacteria_annotation.R (viz mapping)", "可选: core 中 bacteria 专用 distance/model 分支"]
+  }
+}

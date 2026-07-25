@@ -1,0 +1,9 @@
+{
+  "status": "error",
+  "organism_type": "bacteria",
+  "tree_file": "",
+  "visualization": "",
+  "metadata": "",
+  "statistics": [],
+  "error_message": "Bacteria metadata 缺少必需列: resistance"
+}

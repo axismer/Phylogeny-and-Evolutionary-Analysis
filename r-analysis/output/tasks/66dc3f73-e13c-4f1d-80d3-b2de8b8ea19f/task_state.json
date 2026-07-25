@@ -1,0 +1,25 @@
+{
+  "taskId" : "66dc3f73-e13c-4f1d-80d3-b2de8b8ea19f",
+  "status" : "not_implemented",
+  "result" : {
+    "status" : "not_implemented",
+    "organism_type" : "unknown_organism_xyz",
+    "input" : "sequences.fasta",
+    "tree" : "",
+    "visualization" : "",
+    "metadata" : "",
+    "statistics" : { },
+    "error_message" : "未知 --type: unknown_organism_xyz；已注册: archaea, bacteria, eukaryote, fungi, virus",
+    "error_code" : "UNSUPPORTED_ORGANISM",
+    "treeFile" : "D:\\Projects\\phylo-platform\\r-analysis\\output\\tasks\\66dc3f73-e13c-4f1d-80d3-b2de8b8ea19f\\tree.nwk",
+    "imageFile" : "D:\\Projects\\phylo-platform\\r-analysis\\output\\tasks\\66dc3f73-e13c-4f1d-80d3-b2de8b8ea19f\\tree.png",
+    "sequenceCount" : null,
+    "method" : null,
+    "model" : null,
+    "ok" : false
+  },
+  "error_code" : "UNSUPPORTED_ORGANISM",
+  "error_message" : "未知 --type: unknown_organism_xyz；已注册: archaea, bacteria, eukaryote, fungi, virus",
+  "organism_type" : "unknown_organism_xyz",
+  "ok" : false
+}

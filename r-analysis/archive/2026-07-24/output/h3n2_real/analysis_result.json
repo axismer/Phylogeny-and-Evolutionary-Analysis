@@ -1,0 +1,10 @@
+{
+  "input": "h3n2_ha.fasta",
+  "sequence_count": 30,
+  "method": "Maximum Likelihood",
+  "model": "JC69",
+  "tree_file": "tree.nwk",
+  "matrix_file": "distance_matrix.csv",
+  "image_file": "tree.png",
+  "status": "success"
+}

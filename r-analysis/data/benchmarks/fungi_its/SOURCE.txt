@@ -1,0 +1,5 @@
+SOURCE: NCBI Nucleotide / RefSeq ITS region (TYPE material where available)
+Query method: curated accession list via E-utilities efetch (rettype=fasta)
+Prepared: 2026-07-24T23:56:23+0800
+Sequences: 40
+License/use: public NCBI sequence data; for framework regression only

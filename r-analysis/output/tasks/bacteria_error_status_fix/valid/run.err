@@ -1,0 +1,6 @@
+[run_analysis] organism_type=bacteria
+[run_analysis] fasta=D:/Projects/phylo-platform/r-analysis/test-data/bacteria/valid/valid.fasta
+[run_analysis] metadata=D:/Projects/phylo-platform/r-analysis/test-data/bacteria/valid/metadata.csv
+[run_analysis] output=D:/Projects/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/valid
+[BacteriaStrategy] 16S 长度启发式通过（median=1499 bp）；未做物种分类鉴定。
+[run_analysis] status=success

@@ -1,0 +1,12 @@
+{
+  "status": "error",
+  "organism_type": "bacteria",
+  "input": "sequences.fasta",
+  "tree": "",
+  "visualization": "",
+  "metadata": "",
+  "statistics": {},
+  "error_message": "Bacteria metadata 缺少必需列: resistance",
+  "tree_file": "",
+  "error_code": "MISSING_METADATA_FIELDS"
+}

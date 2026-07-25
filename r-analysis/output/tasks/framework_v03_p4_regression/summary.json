@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-07-24T23:58:05+0800",
+  "framework": "v0.3-p4",
+  "cases": [
+    {
+      "case_id": "all_plugin_discovery",
+      "ok": true,
+      "exit_code": 0,
+      "status": "ok",
+      "error_code": null,
+      "notes": "PASS registered=archaea,bacteria,eukaryote,fungi,virus"
+    },
+    {
+      "case_id": "all_contract_valid",
+      "ok": true,
+      "exit_code": 0,
+      "status": "ok",
+      "error_code": null,
+      "notes": "PASS all four plugins"
+    },
+    {
+      "case_id": "invalid_plugin",
+      "ok": true,
+      "exit_code": 0,
+      "status": "ok",
+      "error_code": "PLUGIN_CONTRACT_INVALID",
+      "notes": "PASS PLUGIN_CONTRACT_INVALID"
+    },
+    {
+      "case_id": "duplicate_plugin",
+      "ok": true,
+      "exit_code": 0,
+      "status": "ok",
+      "error_code": "PLUGIN_DUPLICATE_TYPE",
+      "notes": "PASS PLUGIN_DUPLICATE_TYPE"
+    },
+    {
+      "case_id": "virus_pipeline",
+      "ok": true,
+      "exit_code": 0,
+      "status": "success",
+      "error_code": null,
+      "notes": "PASS"
+    },
+    {
+      "case_id": "bacteria_pipeline",
+      "ok": true,
+      "exit_code": 0,
+      "status": "success",
+      "error_code": null,
+      "notes": "PASS"
+    },
+    {
+      "case_id": "unknown_type",
+      "ok": true,
+      "exit_code": 2,
+      "status": "not_implemented",
+      "error_code": "UNSUPPORTED_ORGANISM",
+      "notes": "PASS"
+    }
+  ]
+}

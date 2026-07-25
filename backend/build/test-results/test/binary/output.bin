@@ -1,0 +1,104 @@
+�09:37:57.598 [Test worker] INFO com.phylo.platform.service.task.DefaultAnalysisTaskService -- 任务 f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99 开始同步分析 organismType=virus
+�09:37:57.602 [Test worker] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- 启动 R Framework: cwd=D:\Projects\phylo-platform\r-analysis cmd=[D:\R-4.4.2\bin\Rscript.exe, runners/run_analysis.R, --type, virus, --fasta, D:\Projects\phylo-platform\r-analysis\input\tasks\f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99\sequences.fasta, --metadata, D:\Projects\phylo-platform\r-analysis\input\tasks\f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99\metadata.csv, --output, D:\Projects\phylo-platform\r-analysis\output\tasks\f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99]
+09:38:04.391 [Test worker] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript exitCode=0
+{09:38:04.391 [Test worker] WARN com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript stderr:
+#[run_analysis] organism_type=virus
+|[run_analysis] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/sequences.fasta
+|[run_analysis] metadata=D:/Projects/phylo-platform/r-analysis/input/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/metadata.csv
+n[run_analysis] output=D:/Projects/phylo-platform/r-analysis/output/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99
+,[strategy_runner] start organism_type=virus
+[strategy_runner] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/sequences.fasta
+q[strategy_runner] output=D:/Projects/phylo-platform/r-analysis/output/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99
+4[strategy_runner] tip match ok: matched=4 missing=0
+*[strategy_runner] finished status=success
+[run_analysis] status=success
+
+�09:38:04.441 [Test worker] INFO com.phylo.platform.service.task.DefaultAnalysisTaskService -- 任务 6bf0870f-6197-4c85-b86d-f276f4a3312f 开始同步分析 organismType=fungi
+�09:38:04.442 [Test worker] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- 启动 R Framework: cwd=D:\Projects\phylo-platform\r-analysis cmd=[D:\R-4.4.2\bin\Rscript.exe, runners/run_analysis.R, --type, fungi, --fasta, D:\Projects\phylo-platform\r-analysis\input\tasks\6bf0870f-6197-4c85-b86d-f276f4a3312f\sequences.fasta, --metadata, D:\Projects\phylo-platform\r-analysis\input\tasks\6bf0870f-6197-4c85-b86d-f276f4a3312f\metadata.csv, --output, D:\Projects\phylo-platform\r-analysis\output\tasks\6bf0870f-6197-4c85-b86d-f276f4a3312f]
+09:38:15.285 [Test worker] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript exitCode=0
+{09:38:15.285 [Test worker] WARN com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript stderr:
+#[run_analysis] organism_type=fungi
+|[run_analysis] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/sequences.fasta
+|[run_analysis] metadata=D:/Projects/phylo-platform/r-analysis/input/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/metadata.csv
+n[run_analysis] output=D:/Projects/phylo-platform/r-analysis/output/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f
+,[strategy_runner] start organism_type=fungi
+[strategy_runner] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/sequences.fasta
+q[strategy_runner] output=D:/Projects/phylo-platform/r-analysis/output/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f
+4[strategy_runner] tip match ok: matched=5 missing=0
+*[strategy_runner] finished status=success
+[run_analysis] status=success
+
+�09:38:15.291 [Test worker] INFO com.phylo.platform.service.task.DefaultAnalysisTaskService -- 任务 965af817-8975-4082-8145-e8768863e256 开始同步分析 organismType=bacteria
+�09:38:15.292 [Test worker] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- 启动 R Framework: cwd=D:\Projects\phylo-platform\r-analysis cmd=[D:\R-4.4.2\bin\Rscript.exe, runners/run_analysis.R, --type, bacteria, --fasta, D:\Projects\phylo-platform\r-analysis\input\tasks\965af817-8975-4082-8145-e8768863e256\sequences.fasta, --output, D:\Projects\phylo-platform\r-analysis\output\tasks\965af817-8975-4082-8145-e8768863e256]
+09:38:15.881 [Test worker] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript exitCode=1
+{09:38:15.881 [Test worker] WARN com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript stderr:
+&[run_analysis] organism_type=bacteria
+|[run_analysis] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/965af817-8975-4082-8145-e8768863e256/sequences.fasta
+[run_analysis] metadata=<none>
+n[run_analysis] output=D:/Projects/phylo-platform/r-analysis/output/tasks/965af817-8975-4082-8145-e8768863e256
+/[strategy_runner] start organism_type=bacteria
+[strategy_runner] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/965af817-8975-4082-8145-e8768863e256/sequences.fasta
+q[strategy_runner] output=D:/Projects/phylo-platform/r-analysis/output/tasks/965af817-8975-4082-8145-e8768863e256
+_[BacteriaStrategy] 16S 长度启发式通过（median=1499 bp）；未做物种分类鉴定。
+k[strategy_runner] ERROR: BacteriaStrategy: 第一版要求提供 --metadata code=MISSING_METADATA_ARGUMENT
+:ERROR: BacteriaStrategy: 第一版要求提供 --metadata
+
+�09:38:15.886 [Test worker] INFO com.phylo.platform.service.task.DefaultAnalysisTaskService -- 任务 0673cb72-2ce3-4400-9bed-0094d6ec07fa 开始同步分析 organismType=unknown_organism_xyz
+�09:38:15.887 [Test worker] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- 启动 R Framework: cwd=D:\Projects\phylo-platform\r-analysis cmd=[D:\R-4.4.2\bin\Rscript.exe, runners/run_analysis.R, --type, unknown_organism_xyz, --fasta, D:\Projects\phylo-platform\r-analysis\input\tasks\0673cb72-2ce3-4400-9bed-0094d6ec07fa\sequences.fasta, --output, D:\Projects\phylo-platform\r-analysis\output\tasks\0673cb72-2ce3-4400-9bed-0094d6ec07fa]
+09:38:16.269 [Test worker] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript exitCode=2
+{09:38:16.269 [Test worker] WARN com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript stderr:
+F[run_analysis] status=not_implemented error_code=UNSUPPORTED_ORGANISM
+
+�09:38:16.276 [ForkJoinPool.commonPool-worker-1] INFO com.phylo.platform.service.task.DefaultAnalysisTaskService -- 任务 66e580a4-7376-48d5-9647-4310f8c074dc 开始同步分析 organismType=virus
+�09:38:16.277 [ForkJoinPool.commonPool-worker-2] INFO com.phylo.platform.service.task.DefaultAnalysisTaskService -- 任务 01833c73-2c01-4b2d-b684-3025e32c361c 开始同步分析 organismType=virus
+�09:38:16.277 [ForkJoinPool.commonPool-worker-1] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- 启动 R Framework: cwd=D:\Projects\phylo-platform\r-analysis cmd=[D:\R-4.4.2\bin\Rscript.exe, runners/run_analysis.R, --type, virus, --fasta, D:\Projects\phylo-platform\r-analysis\input\tasks\66e580a4-7376-48d5-9647-4310f8c074dc\sequences.fasta, --metadata, D:\Projects\phylo-platform\r-analysis\input\tasks\66e580a4-7376-48d5-9647-4310f8c074dc\metadata.csv, --output, D:\Projects\phylo-platform\r-analysis\output\tasks\66e580a4-7376-48d5-9647-4310f8c074dc]
+�09:38:16.277 [ForkJoinPool.commonPool-worker-2] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- 启动 R Framework: cwd=D:\Projects\phylo-platform\r-analysis cmd=[D:\R-4.4.2\bin\Rscript.exe, runners/run_analysis.R, --type, virus, --fasta, D:\Projects\phylo-platform\r-analysis\input\tasks\01833c73-2c01-4b2d-b684-3025e32c361c\sequences.fasta, --metadata, D:\Projects\phylo-platform\r-analysis\input\tasks\01833c73-2c01-4b2d-b684-3025e32c361c\metadata.csv, --output, D:\Projects\phylo-platform\r-analysis\output\tasks\01833c73-2c01-4b2d-b684-3025e32c361c]
+�09:38:23.089 [ForkJoinPool.commonPool-worker-1] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript exitCode=0
+�09:38:23.089 [ForkJoinPool.commonPool-worker-1] WARN com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript stderr:
+#[run_analysis] organism_type=virus
+|[run_analysis] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/sequences.fasta
+|[run_analysis] metadata=D:/Projects/phylo-platform/r-analysis/input/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/metadata.csv
+n[run_analysis] output=D:/Projects/phylo-platform/r-analysis/output/tasks/66e580a4-7376-48d5-9647-4310f8c074dc
+,[strategy_runner] start organism_type=virus
+[strategy_runner] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/sequences.fasta
+q[strategy_runner] output=D:/Projects/phylo-platform/r-analysis/output/tasks/66e580a4-7376-48d5-9647-4310f8c074dc
+4[strategy_runner] tip match ok: matched=4 missing=0
+*[strategy_runner] finished status=success
+[run_analysis] status=success
+
+�09:38:23.197 [ForkJoinPool.commonPool-worker-2] INFO com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript exitCode=0
+�09:38:23.197 [ForkJoinPool.commonPool-worker-2] WARN com.phylo.platform.service.r.ProcessBuilderRPhylogeneticAnalysisService -- Rscript stderr:
+#[run_analysis] organism_type=virus
+|[run_analysis] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/sequences.fasta
+|[run_analysis] metadata=D:/Projects/phylo-platform/r-analysis/input/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/metadata.csv
+n[run_analysis] output=D:/Projects/phylo-platform/r-analysis/output/tasks/01833c73-2c01-4b2d-b684-3025e32c361c
+,[strategy_runner] start organism_type=virus
+[strategy_runner] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/sequences.fasta
+q[strategy_runner] output=D:/Projects/phylo-platform/r-analysis/output/tasks/01833c73-2c01-4b2d-b684-3025e32c361c
+4[strategy_runner] tip match ok: matched=4 missing=0
+*[strategy_runner] finished status=success
+[run_analysis] status=success
+
+ �09:38:23.258 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.phylo.platform.controller.AnalysisTaskControllerTest]: AnalysisTaskControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+ �09:38:23.377 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.phylo.platform.PhyloPlatformApplication for test class com.phylo.platform.controller.AnalysisTaskControllerTest
+ 
+ (  .   ____          _            __ _ _
+ ) /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+ *( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ + \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+ *  '  |____| .__|_| |_|_| |_\__, | / / / /
+ ) =========|_|==============|___/=/_/_/_/
+ 
+ , :: Spring Boot ::                (v3.4.5)
+ 
+ �2026-07-25T09:38:23.644+08:00  INFO 34152 --- [phylo-platform] [    Test worker] c.p.p.c.AnalysisTaskControllerTest       : Starting AnalysisTaskControllerTest using Java 21.0.6 with PID 34152 (started by Windows11 in D:\Projects\phylo-platform\backend)
+ �2026-07-25T09:38:23.645+08:00  INFO 34152 --- [phylo-platform] [    Test worker] c.p.p.c.AnalysisTaskControllerTest       : No active profile set, falling back to 1 default profile: "default"
+  �Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+  �WARNING: A Java agent has been loaded dynamically (C:\Users\Windows11\AppData\Local\Temp\cursor-sandbox-cache\d46fda41adec3327cfe22412c1dace8b\gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.15.11\a38b16385e867f59a641330f0362ebe742788ed8\byte-buddy-agent-1.15.11.jar)
+  rWARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+  sWARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+  VWARNING: Dynamic loading of agents will be disallowed by default in a future release
+ �2026-07-25T09:38:24.924+08:00  INFO 34152 --- [phylo-platform] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+ �2026-07-25T09:38:24.925+08:00  INFO 34152 --- [phylo-platform] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+ �2026-07-25T09:38:24.927+08:00  INFO 34152 --- [phylo-platform] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+ �2026-07-25T09:38:24.963+08:00  INFO 34152 --- [phylo-platform] [    Test worker] c.p.p.c.AnalysisTaskControllerTest       : Started AnalysisTaskControllerTest in 1.541 seconds (process running for 28.143)

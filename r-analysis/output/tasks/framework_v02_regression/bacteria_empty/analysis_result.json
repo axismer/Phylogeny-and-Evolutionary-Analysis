@@ -1,0 +1,12 @@
+{
+  "status": "error",
+  "organism_type": "bacteria",
+  "input": "empty.fasta",
+  "tree": "",
+  "visualization": "",
+  "metadata": "",
+  "statistics": {},
+  "error_message": "BacteriaStrategy: FASTA 为空（无序列记录）；至少需要 3 条序列，当前: 0",
+  "tree_file": "",
+  "error_code": "EMPTY_FASTA"
+}

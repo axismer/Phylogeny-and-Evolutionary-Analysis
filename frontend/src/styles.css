@@ -1,0 +1,255 @@
+:root {
+  --ink: #1a2b33;
+  --muted: #5a6f78;
+  --line: #c5d2d8;
+  --paper: #eef3f5;
+  --panel: #f7fafb;
+  --accent: #0f6b5c;
+  --accent-deep: #0a4f44;
+  --danger: #9b2c2c;
+  --radius: 10px;
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 500px at 10% -10%, #d7ebe6 0%, transparent 55%),
+    radial-gradient(900px 420px at 100% 0%, #d9e4ec 0%, transparent 50%),
+    var(--paper);
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+.hero {
+  padding: 1.5rem 0 2rem;
+}
+
+.brand {
+  margin: 0 0 0.75rem;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: clamp(1.75rem, 4vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.lead {
+  margin: 0 0 1.5rem;
+  max-width: 36rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.cta {
+  appearance: none;
+  border: none;
+  border-radius: 999px;
+  padding: 0.85rem 1.6rem;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.cta:hover:not(:disabled) {
+  background: var(--accent-deep);
+  transform: translateY(-1px);
+}
+
+.cta:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.status {
+  margin: 0.9rem 0 0;
+  font-size: 0.95rem;
+}
+
+.status.ok {
+  color: var(--accent-deep);
+}
+
+.status.err {
+  color: var(--danger);
+}
+
+.section {
+  margin-top: 2rem;
+  padding: 1.25rem 1.25rem 1.5rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.section h2 {
+  margin: 0 0 1rem;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1.35rem;
+}
+
+.empty {
+  margin: 0;
+  color: var(--muted);
+}
+
+.empty.error {
+  color: var(--danger);
+}
+
+.matrix-wrap {
+  overflow: auto;
+  max-height: 420px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.matrix-table {
+  border-collapse: collapse;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.matrix-table th,
+.matrix-table td {
+  border: 1px solid var(--line);
+  padding: 0.35rem 0.5rem;
+  text-align: right;
+}
+
+.matrix-table thead th,
+.matrix-table tbody th {
+  position: sticky;
+  background: #e8f1ef;
+  color: var(--ink);
+  font-weight: 600;
+  text-align: left;
+  z-index: 1;
+}
+
+.matrix-table thead th {
+  top: 0;
+}
+
+.matrix-table tbody th {
+  left: 0;
+  z-index: 2;
+}
+
+.matrix-table thead th.corner {
+  left: 0;
+  z-index: 3;
+}
+
+.matrix-table td.diagonal {
+  background: #f0f6f4;
+  color: var(--muted);
+}
+
+.tree-meta {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.tree-canvas {
+  overflow: auto;
+  padding: 0.75rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.branch {
+  display: flex;
+  align-items: stretch;
+  gap: 0.35rem;
+  margin: 0.15rem 0;
+}
+
+.branch .fork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0.65rem;
+  border-left: 2px solid #7aa39a;
+}
+
+.branch .edge {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 1.6rem;
+  padding-left: 0.35rem;
+  border-left: 2px solid #7aa39a;
+}
+
+.branch.root > .edge {
+  border-left-color: transparent;
+}
+
+.branch.leaf .edge {
+  border-left-color: #0f6b5c;
+}
+
+.branch .len {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.branch .label {
+  font-weight: 500;
+}
+
+.branch .label.muted {
+  color: var(--muted);
+}
+
+.newick-raw {
+  margin-top: 0.9rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.newick-raw code {
+  display: block;
+  margin-top: 0.4rem;
+  padding: 0.75rem;
+  overflow: auto;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding-top: 1.5rem;
+  }
+
+  .section {
+    padding: 1rem;
+  }
+}

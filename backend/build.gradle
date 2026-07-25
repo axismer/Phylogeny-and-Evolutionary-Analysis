@@ -1,0 +1,53 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.4.5'
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'com.phylo'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+// Legacy Maven/JPA 树（com.phylo.{controller,model,repository,…}）与本 Gradle 模块并存；
+// 本模块只构建 com.phylo.platform.* 分析链路。
+sourceSets {
+	main {
+		java {
+			exclude 'com/phylo/algorithm/**'
+			exclude 'com/phylo/config/**'
+			exclude 'com/phylo/controller/**'
+			exclude 'com/phylo/model/**'
+			exclude 'com/phylo/repository/**'
+			exclude 'com/phylo/service/**'
+			exclude 'com/phylo/utils/**'
+		}
+	}
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
+// 本地验证完整分析流水线：raw → matrix → tree
+tasks.register('runAnalysis', JavaExec) {
+	group = 'application'
+	description = 'Run AnalysisRunner (FASTA → distance matrix → UPGMA tree)'
+	classpath = sourceSets.main.runtimeClasspath
+	mainClass = 'com.phylo.platform.AnalysisRunner'
+	workingDir = layout.projectDirectory.asFile
+}

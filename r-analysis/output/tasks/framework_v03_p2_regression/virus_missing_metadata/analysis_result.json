@@ -1,0 +1,12 @@
+{
+  "status": "error",
+  "organism_type": "virus",
+  "input": "sequences.fasta",
+  "tree": "",
+  "visualization": "",
+  "metadata": "",
+  "statistics": {},
+  "error_message": "VirusStrategy: metadata 不存在: D:/Projects/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/_no_such_metadata.csv",
+  "tree_file": "",
+  "error_code": "METADATA_FILE_NOT_FOUND"
+}

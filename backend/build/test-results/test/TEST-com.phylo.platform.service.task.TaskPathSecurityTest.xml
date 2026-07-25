@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.phylo.platform.service.task.TaskPathSecurityTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-07-25T01:38:25.150Z" hostname="LAPTOP-II2F9SP5" time="0.007">
+  <properties/>
+  <testcase name="newTaskId_isUuid()" classname="com.phylo.platform.service.task.TaskPathSecurityTest" time="0.001"/>
+  <testcase name="sanitize_stripsPathAndDots()" classname="com.phylo.platform.service.task.TaskPathSecurityTest" time="0.001"/>
+  <testcase name="resolveTaskDir_rejectsTraversalAndInvalidId()" classname="com.phylo.platform.service.task.TaskPathSecurityTest" time="0.002"/>
+  <testcase name="extensionAllowlists()" classname="com.phylo.platform.service.task.TaskPathSecurityTest" time="0.001"/>
+  <testcase name="requireUnder_throwsOnEscape()" classname="com.phylo.platform.service.task.TaskPathSecurityTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

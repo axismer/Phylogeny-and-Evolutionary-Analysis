@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "organism_type": "virus",
+  "input": "sequences.fasta",
+  "tree": "tree.nwk",
+  "visualization": "circular_tree_final.png",
+  "metadata": "metadata.csv",
+  "statistics": {
+    "sequence_count": 4,
+    "method": "Maximum Likelihood",
+    "model": "JC69",
+    "matrix_file": "distance_matrix.csv",
+    "image_file": "tree.png",
+    "annotation_rings": ["Country", "Year"]
+  },
+  "error_message": "",
+  "tree_file": "tree.nwk",
+  "sequence_count": 4,
+  "method": "Maximum Likelihood",
+  "model": "JC69",
+  "matrix_file": "distance_matrix.csv",
+  "image_file": "tree.png"
+}

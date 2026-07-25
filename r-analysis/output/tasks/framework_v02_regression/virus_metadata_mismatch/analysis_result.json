@@ -1,0 +1,12 @@
+{
+  "status": "error",
+  "organism_type": "virus",
+  "input": "sequences.fasta",
+  "tree": "tree.nwk",
+  "visualization": "",
+  "metadata": "metadata.csv",
+  "statistics": {},
+  "error_message": "VirusStrategy: metadata label/sample_id 与 tree tip 不匹配，缺失: A_Hong_Kong_H090_695_V10_2009, A_Oregon_15_2009, A_Boston_DOA2_107_2012, A_Hawaii_02_2013",
+  "tree_file": "tree.nwk",
+  "error_code": "TIP_METADATA_MISMATCH"
+}

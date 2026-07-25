@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-07-24T23:59:25+0800",
+  "framework": "v0.3-p2",
+  "cases": [
+    {
+      "case_id": "fasta_parity_virus_valid",
+      "ok": true,
+      "exit_code": 0,
+      "status": "parity_ok",
+      "error_code": null,
+      "error_message": "",
+      "notes": "PASS tip_count=4"
+    },
+    {
+      "case_id": "fasta_parity_bacteria_valid",
+      "ok": true,
+      "exit_code": 0,
+      "status": "parity_ok",
+      "error_code": null,
+      "error_message": "",
+      "notes": "PASS tip_count=6"
+    },
+    {
+      "case_id": "metadata_read_parity",
+      "ok": true,
+      "exit_code": 0,
+      "status": "parity_ok",
+      "error_code": null,
+      "error_message": "",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "metadata_tip_match_valid",
+      "ok": true,
+      "exit_code": 0,
+      "status": "parity_ok",
+      "error_code": null,
+      "error_message": "",
+      "notes": "PASS virus_matched=4 bacteria_matched=6"
+    },
+    {
+      "case_id": "virus_valid",
+      "ok": true,
+      "exit_code": 0,
+      "status": "success",
+      "error_code": null,
+      "error_message": "",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "virus_bad_fasta",
+      "ok": true,
+      "exit_code": 1,
+      "status": "error",
+      "error_code": "EMPTY_FASTA",
+      "error_message": "VirusStrategy: FASTA 格式无效（首行应以 > 开头）",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "virus_missing_metadata",
+      "ok": true,
+      "exit_code": 1,
+      "status": "error",
+      "error_code": "METADATA_FILE_NOT_FOUND",
+      "error_message": "VirusStrategy: metadata 不存在: D:/Projects/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/_no_such_metadata.csv",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "bacteria_valid",
+      "ok": true,
+      "exit_code": 0,
+      "status": "success",
+      "error_code": null,
+      "error_message": "",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "bacteria_bad_metadata",
+      "ok": true,
+      "exit_code": 1,
+      "status": "error",
+      "error_code": "MISSING_METADATA_FIELDS",
+      "error_message": "Bacteria metadata 缺少必需列: resistance",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "bacteria_missing_fasta",
+      "ok": true,
+      "exit_code": 1,
+      "status": "error",
+      "error_code": "EMPTY_FASTA",
+      "error_message": "BacteriaStrategy: FASTA 不存在: D:/Projects/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/_missing_input.fasta",
+      "notes": "PASS"
+    }
+  ]
+}

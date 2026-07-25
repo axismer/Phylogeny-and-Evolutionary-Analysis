@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-07-24T23:57:46+0800",
+  "overall_ok": true,
+  "discovery_ok": true,
+  "registered": ["archaea", "bacteria", "eukaryote", "fungi", "virus"],
+  "cases": [
+    {
+      "organism_type": "virus",
+      "ok": true,
+      "status": "production",
+      "contract": "VALID",
+      "plugin_path": "D:/Projects/phylo-platform/r-analysis/strategies/virus/plugin.R",
+      "notes": "PASS"
+    },
+    {
+      "organism_type": "bacteria",
+      "ok": true,
+      "status": "production",
+      "contract": "VALID",
+      "plugin_path": "D:/Projects/phylo-platform/r-analysis/strategies/bacteria/plugin.R",
+      "notes": "PASS"
+    },
+    {
+      "organism_type": "archaea",
+      "ok": true,
+      "status": "stub",
+      "contract": "VALID",
+      "plugin_path": "D:/Projects/phylo-platform/r-analysis/strategies/archaea/plugin.R",
+      "notes": "PASS"
+    },
+    {
+      "organism_type": "eukaryote",
+      "ok": true,
+      "status": "stub",
+      "contract": "VALID",
+      "plugin_path": "D:/Projects/phylo-platform/r-analysis/strategies/eukaryote/plugin.R",
+      "notes": "PASS"
+    },
+    {
+      "organism_type": "fungi",
+      "ok": true,
+      "status": "production",
+      "contract": "VALID",
+      "plugin_path": "D:/Projects/phylo-platform/r-analysis/strategies/fungi/plugin.R",
+      "notes": "PASS"
+    }
+  ]
+}

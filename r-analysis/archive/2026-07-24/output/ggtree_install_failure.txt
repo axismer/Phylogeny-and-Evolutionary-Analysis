@@ -1,0 +1,9 @@
+timestamp: 2026-07-24 11:23:01
+module: ggtree_visualization.R
+status: FAILED
+note: 未启用 ape fallback；请修复 ggtree 环境后重试。
+reason: Problem while computing aesthetics.
+ℹ Error occurred in the 9th layer.
+Caused by error:
+! object 'Country' not found
+R.version: R version 4.4.2 (2024-10-31 ucrt)

@@ -1,0 +1,7 @@
+"sample_id","organism_type","collection_date","location","host","taxonomy","environment","source","resistance","label"
+"BAD_NR_074540","bacteria",2020,"RefSeq",NA,"Bacillus","soil","isolate","none","BAD_NR_074540"
+"BAD_NR_114874","bacteria",2020,"RefSeq",NA,"Parageobacillus","thermal","isolate","none","BAD_NR_114874"
+"BAD_NR_075032","bacteria",2020,"RefSeq",NA,"Lactobacillus","food","isolate","none","BAD_NR_075032"
+"BAD_NR_043401","bacteria",2020,"RefSeq",NA,"Priestia","soil","isolate","none","BAD_NR_043401"
+"BAD_NR_044887","bacteria",2020,"RefSeq",NA,"Micromonospora","environmental","isolate","none","BAD_NR_044887"
+"BAD_NR_074979","bacteria",2020,"RefSeq",NA,"Trichlorobacter","environmental","isolate","none","BAD_NR_074979"

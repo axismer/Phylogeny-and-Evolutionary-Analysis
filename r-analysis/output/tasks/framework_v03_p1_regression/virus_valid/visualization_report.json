@@ -1,0 +1,75 @@
+{
+  "tip_count": 4,
+  "tree_file": "D:/Projects/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/virus_valid/tree.nwk",
+  "tree_from_real_nwk": true,
+  "midpoint_root_display_only": true,
+  "annotation_method": "geom_fruit",
+  "annotation_geom": "geom_tile",
+  "annotation_count": 2,
+  "annotation_rings": ["Country", "Year"],
+  "center_crop": false,
+  "branch_length": {
+    "min": 0.0008,
+    "max": 0.0089,
+    "mean": 0.0045,
+    "median": 0.0036,
+    "unit": "substitutions/site"
+  },
+  "root_to_tip_depth": {
+    "min": 0.0085,
+    "max": 0.0119,
+    "median": 0.0117
+  },
+  "layout": {
+    "metrics": {
+      "tree_radius": 0.0119,
+      "annotation_radius": 0.0152,
+      "tree_fill_ratio": 0.7812,
+      "center_crop": 0,
+      "ring_width": 0.0012,
+      "ring_gap": 0.0005,
+      "ring_width_frac": 0.1,
+      "ring_gap_frac": 0.04,
+      "scale_width": 0.002,
+      "open_angle": 12,
+      "x_expand_outer": 0.06
+    },
+    "branch_length_scale": 0.002,
+    "center_crop": false,
+    "note": "Real edge.length preserved; no center crop; metadata via geom_fruit(geom_tile) rings"
+  },
+  "distance_rings": {
+    "values": [0.002, 0.004, 0.006, 0.008, 0.01],
+    "step": 0.002,
+    "count": 5,
+    "label": "Evolutionary distance",
+    "unit": "substitutions/site"
+  },
+  "bootstrap": {
+    "present": true,
+    "threshold": 70,
+    "n_total": 2,
+    "n_displayed": 2,
+    "n_hidden_below_threshold": 0
+  },
+  "metadata_fields": ["label", "Country", "Year"],
+  "color_mapping": {
+    "Country": {},
+    "Year": {
+      "type": "continuous",
+      "gradient": ["#313695", "#4575B4", "#74ADD1", "#ABD9E9", "#FEE090", "#FDAE61", "#F46D43", "#D73027", "#A50026"],
+      "limits": [2007, 2024],
+      "data_range": [2009, 2013],
+      "design_reference": [2007, 2024],
+      "mapping": "numeric Year → cool(early) to warm(recent)"
+    }
+  },
+  "outputs": {
+    "png": "D:/Projects/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/virus_valid/circular_tree_final.png",
+    "pdf": "D:/Projects/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/virus_valid/circular_tree_final.pdf",
+    "dpi_png": 300
+  },
+  "status": "success",
+  "bootstrap_present": true,
+  "bootstrap_displayed": 2
+}

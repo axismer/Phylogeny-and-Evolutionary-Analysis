@@ -1,0 +1,10 @@
+[run_analysis] organism_type=fungi
+[run_analysis] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/c9b860bd-b895-4f90-893c-dec79bcd2e71/sequences.fasta
+[run_analysis] metadata=D:/Projects/phylo-platform/r-analysis/input/tasks/c9b860bd-b895-4f90-893c-dec79bcd2e71/metadata.csv
+[run_analysis] output=D:/Projects/phylo-platform/r-analysis/output/tasks/c9b860bd-b895-4f90-893c-dec79bcd2e71
+[strategy_runner] start organism_type=fungi
+[strategy_runner] fasta=D:/Projects/phylo-platform/r-analysis/input/tasks/c9b860bd-b895-4f90-893c-dec79bcd2e71/sequences.fasta
+[strategy_runner] output=D:/Projects/phylo-platform/r-analysis/output/tasks/c9b860bd-b895-4f90-893c-dec79bcd2e71
+[strategy_runner] tip match ok: matched=5 missing=0
+[strategy_runner] finished status=success
+[run_analysis] status=success

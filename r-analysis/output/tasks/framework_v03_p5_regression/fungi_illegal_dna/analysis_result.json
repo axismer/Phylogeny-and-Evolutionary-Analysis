@@ -1,0 +1,12 @@
+{
+  "status": "error",
+  "organism_type": "fungi",
+  "input": "sequences.fasta",
+  "tree": "",
+  "visualization": "",
+  "metadata": "",
+  "statistics": {},
+  "error_message": "FungiStrategy: ITS DNA 字符合法性失败，发现: X,Z",
+  "tree_file": "",
+  "error_code": "INVALID_DNA"
+}

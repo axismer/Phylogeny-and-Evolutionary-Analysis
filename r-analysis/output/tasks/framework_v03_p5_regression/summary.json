@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-07-24T23:57:37+0800",
+  "framework": "v0.3-p5",
+  "cases": [
+    {
+      "case_id": "plugin_contract_audit",
+      "ok": true,
+      "exit_code": 0,
+      "status": "ok",
+      "error_code": null,
+      "notes": "PASS registered=archaea,bacteria,eukaryote,fungi,virus"
+    },
+    {
+      "case_id": "fungi_valid",
+      "ok": true,
+      "exit_code": 0,
+      "status": "success",
+      "error_code": null,
+      "notes": "PASS"
+    },
+    {
+      "case_id": "fungi_empty",
+      "ok": true,
+      "exit_code": 1,
+      "status": "error",
+      "error_code": "EMPTY_FASTA",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "fungi_illegal_dna",
+      "ok": true,
+      "exit_code": 1,
+      "status": "error",
+      "error_code": "INVALID_DNA",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "fungi_too_few",
+      "ok": true,
+      "exit_code": 1,
+      "status": "error",
+      "error_code": "TOO_FEW_SEQUENCE",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "fungi_tip_mismatch",
+      "ok": true,
+      "exit_code": 1,
+      "status": "error",
+      "error_code": "TIP_METADATA_MISMATCH",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "unknown_organism",
+      "ok": true,
+      "exit_code": 2,
+      "status": "not_implemented",
+      "error_code": "UNSUPPORTED_ORGANISM",
+      "notes": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+[run_analysis] organism_type=virus
+[run_analysis] fasta=D:/Projects/phylo-platform/r-analysis/test-data/virus/invalid_fasta/bad.fasta
+[run_analysis] metadata=<none>
+[run_analysis] output=D:/Projects/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case5_invalid_fasta
+[strategy_runner] start organism_type=virus
+[strategy_runner] fasta=D:/Projects/phylo-platform/r-analysis/test-data/virus/invalid_fasta/bad.fasta
+[strategy_runner] output=D:/Projects/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case5_invalid_fasta
+[strategy_runner] ERROR: VirusStrategy: FASTA 格式无效（首行应以 > 开头） code=EMPTY_FASTA
+ERROR: VirusStrategy: FASTA 格式无效（首行应以 > 开头）

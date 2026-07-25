@@ -1,0 +1,3 @@
+"sample_id","organism_type","collection_date","location","host","taxonomy","environment","source","resistance"
+"NR_074540","bacteria",2020,"RefSeq",NA,"Bacillus","soil","isolate","none"
+"NR_114874","bacteria",2020,"RefSeq",NA,"Parageobacillus","thermal","isolate","none"

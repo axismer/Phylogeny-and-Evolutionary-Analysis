@@ -1,0 +1,12 @@
+{
+  "status": "error",
+  "organism_type": "bacteria",
+  "input": "sequences.fasta",
+  "tree": "",
+  "visualization": "",
+  "metadata": "",
+  "statistics": {},
+  "error_message": "BacteriaStrategy: 第一版要求提供 --metadata",
+  "tree_file": "",
+  "error_code": "MISSING_METADATA_ARGUMENT"
+}

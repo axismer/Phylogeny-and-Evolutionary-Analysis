@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-07-24T23:59:45+0800",
+  "framework": "v0.3-p3",
+  "cases": [
+    {
+      "case_id": "plugin_discovery",
+      "ok": true,
+      "exit_code": 0,
+      "status": "ok",
+      "error_code": null,
+      "error_message": "",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "plugin_contract_invalid",
+      "ok": true,
+      "exit_code": 0,
+      "status": "ok",
+      "error_code": "PLUGIN_CONTRACT_INVALID",
+      "error_message": "",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "plugin_duplicate_type",
+      "ok": true,
+      "exit_code": 0,
+      "status": "ok",
+      "error_code": "PLUGIN_DUPLICATE_TYPE",
+      "error_message": "",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "virus_plugin_valid",
+      "ok": true,
+      "exit_code": 0,
+      "status": "success",
+      "error_code": null,
+      "error_message": "",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "bacteria_plugin_valid",
+      "ok": true,
+      "exit_code": 0,
+      "status": "success",
+      "error_code": null,
+      "error_message": "",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "archaea_plugin_stub",
+      "ok": true,
+      "exit_code": 2,
+      "status": "not_implemented",
+      "error_code": "UNSUPPORTED_ORGANISM",
+      "error_message": "",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "unknown_organism",
+      "ok": true,
+      "exit_code": 2,
+      "status": "not_implemented",
+      "error_code": "UNSUPPORTED_ORGANISM",
+      "error_message": "未知 --type: fungi_unknown_xyz；已注册: archaea, bacteria, eukaryote, fungi, virus",
+      "notes": "PASS"
+    }
+  ]
+}

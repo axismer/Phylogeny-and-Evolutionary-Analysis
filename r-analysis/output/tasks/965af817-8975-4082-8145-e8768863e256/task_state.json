@@ -1,0 +1,23 @@
+{
+  "taskId" : "965af817-8975-4082-8145-e8768863e256",
+  "status" : "error",
+  "result" : {
+    "status" : "error",
+    "organism_type" : "bacteria",
+    "input" : "sequences.fasta",
+    "tree" : "",
+    "visualization" : "",
+    "metadata" : "",
+    "statistics" : { },
+    "error_message" : "BacteriaStrategy: 第一版要求提供 --metadata",
+    "error_code" : "MISSING_METADATA_ARGUMENT",
+    "treeFile" : "D:\\Projects\\phylo-platform\\r-analysis\\output\\tasks\\965af817-8975-4082-8145-e8768863e256\\tree.nwk",
+    "imageFile" : "D:\\Projects\\phylo-platform\\r-analysis\\output\\tasks\\965af817-8975-4082-8145-e8768863e256\\tree.png",
+    "sequenceCount" : null,
+    "method" : null,
+    "model" : null
+  },
+  "error_code" : "MISSING_METADATA_ARGUMENT",
+  "error_message" : "BacteriaStrategy: 第一版要求提供 --metadata",
+  "organism_type" : "bacteria"
+}

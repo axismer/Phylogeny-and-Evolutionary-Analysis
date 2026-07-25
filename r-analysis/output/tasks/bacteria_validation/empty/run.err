@@ -1,0 +1,5 @@
+[run_analysis] organism_type=bacteria
+[run_analysis] fasta=D:/Projects/phylo-platform/r-analysis/test-data/bacteria/empty/empty.fasta
+[run_analysis] metadata=D:/Projects/phylo-platform/r-analysis/test-data/bacteria/empty/metadata.csv
+[run_analysis] output=D:/Projects/phylo-platform/r-analysis/output/tasks/bacteria_validation/empty
+ERROR: BacteriaStrategy: 至少需要 3 条序列，当前: 0

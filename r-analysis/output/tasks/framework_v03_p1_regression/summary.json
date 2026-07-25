@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-07-24T23:59:04+0800",
+  "framework": "v0.3-p1",
+  "cases": [
+    {
+      "case_id": "virus_valid",
+      "ok": true,
+      "exit_code": 0,
+      "status": "success",
+      "error_code": null,
+      "error_message": "",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "bacteria_valid",
+      "ok": true,
+      "exit_code": 0,
+      "status": "success",
+      "error_code": null,
+      "error_message": "",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "virus_empty",
+      "ok": true,
+      "exit_code": 1,
+      "status": "error",
+      "error_code": "EMPTY_FASTA",
+      "error_message": "VirusStrategy: FASTA 为空（无序列记录）",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "virus_tip_mismatch",
+      "ok": true,
+      "exit_code": 1,
+      "status": "error",
+      "error_code": "TIP_METADATA_MISMATCH",
+      "error_message": "VirusStrategy: metadata label/sample_id 与 tree tip 不匹配，缺失: A_Hong_Kong_H090_695_V10_2009, A_Oregon_15_2009, A_Boston_DOA2_107_2012, A_Hawaii_02_2013",
+      "notes": "PASS"
+    },
+    {
+      "case_id": "unknown_organism",
+      "ok": true,
+      "exit_code": 2,
+      "status": "not_implemented",
+      "error_code": "UNSUPPORTED_ORGANISM",
+      "error_message": "未知 --type: fungi_unknown_xyz；已注册: archaea, bacteria, eukaryote, fungi, virus",
+      "notes": "PASS"
+    }
+  ]
+}

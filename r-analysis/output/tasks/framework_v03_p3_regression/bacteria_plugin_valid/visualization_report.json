@@ -1,0 +1,15 @@
+{
+  "organism_type": "bacteria",
+  "tip_count": 6,
+  "tree_file": "D:/Projects/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/bacteria_plugin_valid/tree.nwk",
+  "taxonomy_level": "genus",
+  "taxonomy_ring_field": "taxonomy",
+  "taxonomy_ring_fallback": true,
+  "annotation_rings": ["taxonomy", "environment", "resistance"],
+  "annotation_method": "geom_fruit",
+  "annotation_geom": "geom_tile",
+  "png": "circular_tree_final.png",
+  "pdf": "circular_tree_final.pdf",
+  "scale_width": 0.02,
+  "status": "success"
+}
