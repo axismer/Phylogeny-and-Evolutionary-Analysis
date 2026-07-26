@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     2026/7/24 9:16:09                            */
+/* Created on:     2026/7/25 16:17:59                           */
 /*==============================================================*/
 
 
@@ -22,11 +22,9 @@ create table analysis_task
    tid                  int not null,
    uid                  int,
    did                  int,
-   tuid                 int,
-   tdid                 int,
    ttype                varchar(20),
    tstatus              varchar(20),
-   result_path          varchar(20),
+   result_path          varchar(255),
    error_msg            text,
    started_at           datetime,
    completed_at         datetime,
@@ -41,8 +39,7 @@ create table dataset
 (
    did                  int not null,
    uid                  int,
-   duid                 int,
-   dname                varchar(50),
+   dname                varchar(100),
    source               varchar(10),
    ddescription         text,
    dstatus              varchar(10),
@@ -58,12 +55,9 @@ create table sequence
    sid                  int,
    uid                  int,
    did                  int,
-   seuid                int,
-   sedid                int,
-   sesid                int,
    accession            varchar(100),
-   sename               varchar(50),
-   file_path            varchar(50),
+   sename               varchar(100),
+   file_path            varchar(255),
    se_length            int,
    ssource              varchar(10),
    primary key (seid)
@@ -76,9 +70,8 @@ create table species
 (
    sid                  int not null,
    uid                  int,
-   suid                 int,
-   sname                varchar(50),
-   taxonomy_id          varchar(50),
+   sname                varchar(100),
+   taxonomy_id          varchar(100),
    sdescription         text,
    primary key (sid)
 );
@@ -89,11 +82,11 @@ create table species
 create table user
 (
    uid                  int not null,
-   uname                varchar(20),
-   upassword            varchar(60),
-   nickname             varchar(20),
+   uname                varchar(50),
+   upassword            varchar(255),
+   nickname             varchar(50),
    role                 varchar(10),
-   email                varchar(30),
+   email                varchar(100),
    primary key (uid)
 );
 
