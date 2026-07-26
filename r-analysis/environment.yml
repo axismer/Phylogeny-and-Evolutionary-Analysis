@@ -1,0 +1,42 @@
+# =============================================================================
+# PhyloPlatform - Conda 环境配置
+# 用法: conda env create -f environment.yml
+#       conda activate phylo-r
+# =============================================================================
+name: phylo-r
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # R 基础
+  - r-base>=4.3.0
+  - r-essentials
+
+  # 生信外部工具
+  - mafft>=7.500
+
+  # CRAN 包 (conda 安装更稳定)
+  - r-ape
+  - r-phangorn
+  - r-ggplot2
+  - r-dplyr
+  - r-readr
+  - r-tidyr
+  - r-yaml
+  - r-jsonlite
+  - r-stringr
+  - r-purrr
+  - r-optparse
+  - r-glue
+  - r-biocmanager
+
+  # Bioconductor 包
+  - bioconductor-biostrings
+  - bioconductor-ggtree
+  - bioconductor-treeio
+  - bioconductor-tidytree
+  - bioconductor-ggtreeextra
+
+  # 系统工具
+  - git>=2.40

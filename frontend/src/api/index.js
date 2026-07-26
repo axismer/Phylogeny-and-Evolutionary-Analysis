@@ -3,7 +3,7 @@ import axios from 'axios'
 // 创建 axios 实例
 const api = axios.create({
   baseURL: '/api',
-  timeout: 60000
+  timeout: 300000  // 5 分钟，因为 NCBI 下载可能需要较长时间
 })
 
 // 请求拦截器：自动添加Token
@@ -137,10 +137,78 @@ export function getMySequences() {
 }
 
 /**
+ * 从 NCBI 下载单个序列并分析
+ * @param {string} accession - Accession Number
+ * @param {string} method - 建树方法：'upgma' 或 'nj'
+ * @returns {Promise} 分析结果
+ */
+export function analyzeFromNcbi(accession, method = 'upgma') {
+  return api.post('/ncbi', { accession, method })
+}
+
+/**
+ * 从 NCBI 下载多个序列并分析
+ * @param {string[]} accessions - Accession Number 列表
+ * @param {string} method - 建树方法：'upgma' 或 'nj'
+ * @returns {Promise} 分析结果
+ */
+export function analyzeFromNcbiMulti(accessions, method = 'upgma') {
+  return api.post('/ncbi-multi', { accessions, method })
+}
+
+/**
+ * 验证 NCBI Accession Number 是否有效
+ * @param {string} accession - Accession Number
+ * @returns {Promise}
+ */
+export function validateNcbiAccession(accession) {
+  return api.post('/ncbi-validate', { accession })
+}
+
+/**
  * 健康检查
  */
 export function healthCheck() {
   return api.get('/health')
+}
+
+// ===== AI 分析接口 =====
+
+/**
+ * 解读系统发育树
+ * @param {string} tree - Newick 格式进化树
+ * @param {string[]} sequences - 序列名称列表
+ * @param {string} method - 建树方法
+ * @returns {Promise} AI 分析报告
+ */
+export function interpretPhylogeneticTree(tree, sequences, method = 'UPGMA') {
+  return api.post('/ai/interpret-tree', { tree, sequences, method })
+}
+
+/**
+ * 分析距离矩阵
+ * @param {number[][]} matrix - 距离矩阵二维数组
+ * @param {string[]} names - 序列名称列表
+ * @returns {Promise} AI 矩阵分析报告
+ */
+export function analyzeDistanceMatrix(matrix, names) {
+  return api.post('/ai/analyze-matrix', { matrix, names })
+}
+
+/**
+ * 生成生物学报告
+ * @param {object} data - 实验数据对象
+ * @returns {Promise} 专业级生物学分析报告
+ */
+export function generateBiologicalReport(data) {
+  return api.post('/ai/generate-report', data)
+}
+
+/**
+ * 检查 AI 服务状态
+ */
+export function checkAiHealth() {
+  return api.get('/ai/health')
 }
 
 export default api

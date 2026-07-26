@@ -36,7 +36,7 @@
       </div>
 
       <MatrixTable :matrix="result.distanceMatrix" />
-      <TreeViewer :newick="result.tree" :method="result.method" />
+      <TreeViewer :newick="result.tree" :method="result.method" :circular-tree-image="result.circularTreeImage" />
     </section>
 
     <footer class="footer">
@@ -52,6 +52,7 @@ import FileUploader from '../components/FileUploader.vue'
 import MatrixTable from '../components/MatrixTable.vue'
 import TreeViewer from '../components/TreeViewer.vue'
 import { analyzeFasta, analyzeFastaText, analyzeFromDb, analyzeFromDbMulti, logout } from '../api'
+import { analyzeFromNcbi, analyzeFromNcbiMulti } from '../api'
 
 const router = useRouter()
 const result = ref(null)
@@ -71,6 +72,7 @@ async function handleLogout() {
 }
 
 async function handleAnalyze(payload, doneCallback) {
+  console.log('=== 开始分析 ===', payload)
   error.value = ''
   result.value = null
 
@@ -87,15 +89,32 @@ async function handleAnalyze(payload, doneCallback) {
       } else {
         response = await analyzeFromDbMulti(payload.dbIds, payload.method)
       }
+    } else if (payload.mode === 'ncbi') {
+      // NCBI 模式：根据 useMulti 选择单个或多个下载
+      console.log('执行 NCBI 分析...', payload.accessions, payload.method, payload.useMulti)
+      if (payload.useMulti && payload.accessions.length > 1) {
+        response = await analyzeFromNcbiMulti(payload.accessions, payload.method)
+      } else {
+        // 单个序列（即使 accessions 是数组）
+        response = await analyzeFromNcbi(payload.accessions[0], payload.method)
+      }
+      console.log('NCBI 响应:', response)
+      console.log('response.data:', response.data)
+      console.log('tree value:', response.data?.tree)
     }
+    console.log('获取到的结果:', response.data)
     result.value = response.data
   } catch (err) {
+    console.error('分析错误:', err)
     if (err.response && err.response.data && err.response.data.error) {
       error.value = err.response.data.error
+    } else if (err.message) {
+      error.value = '请求失败：' + err.message
     } else {
-      error.value = '请求失败，请确认后端服务已启动（端口8080）'
+      error.value = '请求失败，请确认后端服务已启动（端口 8080）'
     }
   } finally {
+    console.log('完成分析回调')
     doneCallback()
   }
 }

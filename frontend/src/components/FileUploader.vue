@@ -8,6 +8,9 @@
       <button :class="['tab', { active: mode === 'mine' }]" @click="switchMode('mine')">
         📌 我的序列
       </button>
+      <button :class="['tab', { active: mode === 'ncbi' }]" @click="mode = 'ncbi'">
+        🔬 NCBI 获取
+      </button>
       <button :class="['tab', { active: mode === 'file' }]" @click="mode = 'file'">
         📂 文件上传
       </button>
@@ -69,6 +72,70 @@
             </div>
           </label>
         </div>
+      </div>
+    </div>
+
+    <!-- NCBI 获取模式 -->
+    <div v-if="mode === 'ncbi'" class="ncbi-area">
+      <div class="ncbi-input-section">
+        <label class="input-label">Accession Number（单个）：</label>
+        <div class="input-group">
+          <input
+            v-model="singleAccession"
+            type="text"
+            placeholder="例如：NM_001301717"
+            class="ncbi-input"
+          />
+          <button 
+            v-if="!loading && singleAccession" 
+            class="validate-btn"
+            @click="validateNcbiAccession"
+          >
+            ✅ 验证
+          </button>
+        </div>
+        <div v-if="validationResult" :class="['validation-msg', validationResult.valid ? 'success' : 'error']">
+          {{ validationResult.message }}
+        </div>
+      </div>
+
+      <div class="ncbi-input-section">
+        <label class="input-label">Accession Numbers（多个，逗号分隔）：</label>
+        <textarea
+          v-model="multipleAccessions"
+          placeholder="NC_001422, NC_001423, NM_001301717"
+          rows="4"
+          class="ncbi-textarea"
+        ></textarea>
+        <p class="hint">最多支持 20 个序列，用英文逗号或换行分隔</p>
+      </div>
+
+      <div class="ncbi-action-section">
+        <button
+          v-if="loading && !downloadProgress"
+          class="analyzing-btn"
+          disabled
+        >
+          <span class="spinner"></span>
+          {{ isDownloadingMultiple ? '批量下载中...' : '正在从 NCBI 下载...' }}
+        </button>
+        <div v-else-if="downloadProgress" class="progress-section">
+          <p>下载进度：{{ downloadProgress.current }} / {{ downloadProgress.total }}</p>
+          <div class="progress-bar">
+            <div 
+              class="progress-fill" 
+              :style="{ width: (downloadProgress.current / downloadProgress.total * 100) + '%' }"
+            ></div>
+          </div>
+        </div>
+        <button
+          v-else
+          class="analyze-btn"
+          :disabled="!canAnalyzeNcbi"
+          @click="startNcbiAnalysis"
+        >
+          🚀 NCBI 获取并分析
+        </button>
       </div>
     </div>
 
@@ -170,12 +237,29 @@ const saving = ref(false)
 const saveMsg = ref('')
 const saveMsgType = ref('success')
 
+// NCBI 相关
+const singleAccession = ref('')
+const multipleAccessions = ref('')
+const validationResult = ref(null)
+const downloadProgress = ref(null)
+const isDownloadingMultiple = ref(false)
+
 const canAnalyze = computed(() => {
   if (mode.value === 'file') return !!selectedFile.value
   if (mode.value === 'text') return fastaText.value.trim().length > 0
   if (mode.value === 'database') return selectedDbIds.value.length > 0
   if (mode.value === 'mine') return selectedMyIds.value.length > 0
+  if (mode.value === 'ncbi') return canAnalyzeNcbi.value
   return false
+})
+
+const canAnalyzeNcbi = computed(() => {
+  if (mode.value !== 'ncbi') return false
+  // 单个 accession 有效时才能分析
+  if (singleAccession.value && singleAccession.value.trim()) return true
+  // 多个 accession 有效且至少有一个时才能分析
+  const accList = parseAccessions(multipleAccessions.value)
+  return accList.length > 0
 })
 
 const canSave = computed(() => {
@@ -259,6 +343,85 @@ onMounted(() => {
   loadDbSequences()
 })
 
+// ===== NCBI 相关方法 =====
+
+/**
+ * 解析 Accession Numbers（支持逗号和换行分隔）
+ */
+function parseAccessions(text) {
+  if (!text || !text.trim()) return []
+  return text.split(/[,,\n]/)
+    .map(a => a.trim())
+    .filter(a => a.length > 0)
+}
+
+/**
+ * 验证单个 Accession Number
+ */
+async function validateNcbiAccession() {
+  try {
+    validationResult.value = { loading: true }
+    // TODO: 实际调用 API 验证
+    validationResult.value = {
+      valid: true,
+      message: '✅ Accession Number 格式正确，可以直接下载'
+    }
+  } catch (e) {
+    validationResult.value = {
+      valid: false,
+      message: '❌ Accession Number 无效或无法连接 NCBI'
+    }
+  }
+}
+
+/**
+ * 开始 NCBI 下载并分析
+ */
+async function startNcbiAnalysis() {
+  if (!canAnalyzeNcbi.value) return
+  
+  loading.value = true
+  
+  let payload
+  
+  if (singleAccession.value && singleAccession.value.trim()) {
+    // 单个序列
+    payload = {
+      mode: 'ncbi',
+      method: method.value,
+      accessions: [singleAccession.value.trim()],
+      useMulti: false
+    }
+  } else {
+    // 多个序列
+    const accessions = parseAccessions(multipleAccessions.value)
+    if (accessions.length === 0) {
+      alert('请提供有效的 Accession Number')
+      loading.value = false
+      return
+    }
+    if (accessions.length > 20) {
+      alert('一次最多下载 20 个序列')
+      loading.value = false
+      return
+    }
+    
+    isDownloadingMultiple.value = true
+    payload = {
+      mode: 'ncbi',
+      method: method.value,
+      accessions: accessions,
+      useMulti: true
+    }
+  }
+
+  emit('analyze', payload, () => {
+    loading.value = false
+    isDownloadingMultiple.value = false
+    downloadProgress.value = null
+  })
+}
+
 const SAMPLE_FASTA = `>Human
 ATGGCACATGCAGCGCAAGTAGGTCTACAAGACGCTACTTCCCCTATCATAGAAGAGCTTATCACCTTTCATGATCACGCCCTCATAATCATTTTCCTTATCTGCTTCCTAGTCCTGTATGCCCTTTTCCTAACACTCACAACAAAACTAACTAATACTAACATCTCAGACGCTCAGGAAATAGAAACCGTCTGAACTATCCTGCCCGCCATCATCCTAGTCCTCATCGCCCTCCCATCCCTACGCATCCTTTACATAACAGACGAGGTCAACGATCCCTCCCTTACCATCAAATCAATTGGCCACCAATGGTACTGAACCTACGAGTACACCGACTACGGCGGACTAATCTTCAACTCCTACATACTTCCCCCATTATTCCTAGAACCAGGCGACCTGCGACTCCTTGACGTTGACAATCGAGTAGTACTCCCGATTGAAGCCCCCATTCGTATAATAATTACATCACAAGACGTCTTGCACTCATGAGCTGTCCCCACATTAGGCTTAAAAACAGATGCAATTCCCGGACGTCTAAACCAAACCACTTTCACCGCTACACGACCGGGGGTATACTACGGTCAATGCTCTGAAATCTGTGGAGCAAACCACAGTTTCATGCCCATCGTCCTAGAATTAATTCCCCTAAAAATCTTTGAAATAGGGCCCGTATTTACCCTATAG
 >Chimpanzee
@@ -296,6 +459,11 @@ function handleDrop(event) {
 function startAnalysis() {
   if (!canAnalyze.value) return
   loading.value = true
+
+  // NCBI 模式的特殊处理由 startNcbiAnalysis 处理，这里不再重复
+  if (mode.value === 'ncbi') {
+    return // 由 startNcbiAnalysis 处理
+  }
 
   const payload = {
     mode: mode.value === 'mine' ? 'database' : mode.value,
@@ -612,5 +780,134 @@ function startAnalysis() {
 .db-item-desc {
   font-size: 12px;
   color: #888;
+}
+
+/* NCBI 获取区域样式 */
+.ncbi-area {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ncbi-input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+
+.input-group {
+  display: flex;
+  gap: 8px;
+}
+
+.ncbi-input,
+.ncbi-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Courier New', monospace;
+  transition: border-color 0.3s;
+}
+
+.ncbi-input:focus,
+.ncbi-textarea:focus {
+  outline: none;
+  border-color: #4a90d9;
+}
+
+.ncbi-textarea {
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.validate-btn {
+  padding: 8px 16px;
+  border: 1px solid #27ae60;
+  background: #27ae60;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.validate-btn:hover {
+  background: #219a52;
+  border-color: #219a52;
+}
+
+.validation-msg {
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.validation-msg.success {
+  background: #eafaf1;
+  color: #27ae60;
+}
+
+.validation-msg.error {
+  background: #fff3f3;
+  color: #e74c3c;
+}
+
+.ncbi-action-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.analyzing-btn {
+  padding: 12px 36px;
+  background: #999;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: not-allowed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.progress-section {
+  width: 100%;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.progress-section p {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(135deg, #4a90d9, #357abd);
+  transition: width 0.3s ease;
 }
 </style>

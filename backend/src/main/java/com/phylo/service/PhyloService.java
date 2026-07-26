@@ -34,9 +34,15 @@ public class PhyloService {
     private final UPGMA upgma = new UPGMA();
     private final NeighborJoining nj = new NeighborJoining();
     private final SequenceDataRepository sequenceDataRepository;
+    private final NcbiSequenceDownloader ncbiDownloader;
+    private final RAnalysisService rAnalysisService;
 
-    public PhyloService(SequenceDataRepository sequenceDataRepository) {
+    public PhyloService(SequenceDataRepository sequenceDataRepository, 
+                       NcbiSequenceDownloader ncbiDownloader,
+                       RAnalysisService rAnalysisService) {
         this.sequenceDataRepository = sequenceDataRepository;
+        this.ncbiDownloader = ncbiDownloader;
+        this.rAnalysisService = rAnalysisService;
     }
 
     /**
@@ -57,14 +63,18 @@ public class PhyloService {
      * @return 分析结果（包含序列信息、距离矩阵、Newick树）
      */
     public AnalysisResult analyze(String fastaContent, String method) {
-        // Step 1: 解析FASTA
+        System.out.println("\n========== 开始系统发育分析 ==========");
+        System.out.println("方法：" + method);
+            
+        // Step 1: 解析 FASTA
         List<Sequence> sequences = fastaParser.parse(fastaContent);
-
+        System.out.println("Step 1 - 解析序列：" + sequences.size() + " 条");
+    
         if (sequences.isEmpty()) {
-            throw new IllegalArgumentException("未能从文件中解析到任何序列，请检查FASTA格式");
+            throw new IllegalArgumentException("未能从文件中解析到任何序列，请检查 FASTA 格式");
         }
         if (sequences.size() < 2) {
-            throw new IllegalArgumentException("至少需要2条序列才能进行系统发育分析");
+            throw new IllegalArgumentException("至少需要 2 条序列才能进行系统发育分析");
         }
 
         // Step 2: 判断序列是否等长，选择距离算法
@@ -81,17 +91,21 @@ public class PhyloService {
             distanceMatrix = kmerDistance.calculateMatrix(sequences);
             distanceMethod = "k-mer distance (k=3)";
         }
+        System.out.println("Step 2 - 距离矩阵：" + distanceMethod + ", " + sequences.size() + "x" + sequences.size());
 
         // Step 3: 建树
         String newickTree;
         String usedMethod;
         if ("nj".equalsIgnoreCase(method)) {
+            System.out.println("Step 3 - 使用 Neighbor-Joining 建树...");
             newickTree = nj.buildTree(distanceMatrix);
             usedMethod = "Neighbor-Joining (NJ) + " + distanceMethod;
         } else {
+            System.out.println("Step 3 - 使用 UPGMA 建树...");
             newickTree = upgma.buildTree(distanceMatrix);
             usedMethod = "UPGMA + " + distanceMethod;
         }
+        System.out.println("Step 3 - Newick 树：" + newickTree.substring(0, Math.min(80, newickTree.length())) + "...");
 
         // Step 4: 组装结果
         List<AnalysisResult.SequenceInfo> seqInfos = sequences.stream()
@@ -99,6 +113,40 @@ public class PhyloService {
             .collect(Collectors.toList());
 
         return new AnalysisResult(seqInfos, distanceMatrix, newickTree, usedMethod);
+    }
+
+    /**
+     * 使用 R 语言可视化系统发育树
+     * 
+     * @param fastaContent FASTA 内容
+     * @param method 建树方法
+     * @return 包含 Newick 树和 PNG 图片的分析结果
+     */
+    public AnalysisResult analyzeWithRVisualization(String fastaContent, String method) {
+        // 先执行常规分析
+        AnalysisResult result = analyze(fastaContent, method);
+        
+        try {
+            System.out.println("正在使用 R 语言绘制系统发育树...");
+            
+            // 提取序列名称
+            List<String> seqNames = result.getSequences().stream()
+                .map(AnalysisResult.SequenceInfo::getName)
+                .collect(Collectors.toList());
+            
+            // 使用 R 语言绘制环状树
+            String base64Image = rAnalysisService.drawCircularTree(result.getTree(), seqNames);
+            
+            // 将图片添加到结果中
+            result.setCircularTreeImage(base64Image);
+            System.out.println("✅ R 语言绘制的系统发育树已完成");
+            
+        } catch (Exception e) {
+            System.err.println("R 语言绘图失败，继续使用 Newick 格式：" + e.getMessage());
+            // 不抛出异常，继续返回基础分析结果
+        }
+        
+        return result;
     }
 
     /**
@@ -204,5 +252,54 @@ public class PhyloService {
      */
     public List<SequenceData> getUserSequences(Long userId) {
         return sequenceDataRepository.findByUserIdOrderByCreatedAtDesc(userId);
+    }
+
+    // ===== NCBI 序列下载相关方法 =====
+
+    /**
+     * 从 NCBI 下载单个序列并执行分析
+     *
+     * @param accession Accession Number (如 "NM_001301717")
+     * @param method    建树方法："upgma" 或 "nj"
+     * @return 分析结果
+     */
+    public AnalysisResult analyzeFromNcbi(String accession, String method) {
+        System.out.println("正在从 NCBI 下载序列：" + accession);
+        String fastaContent = ncbiDownloader.downloadSingleSequence(accession);
+        System.out.println("NCBI 下载完成，序列长度：" + fastaContent.length() + " 字符");
+        return analyze(fastaContent, method);
+    }
+
+    /**
+     * 从 NCBI 下载多个序列并合并执行分析
+     *
+     * @param accessions Accession Number 列表
+     * @param method     建树方法："upgma" 或 "nj"
+     * @return 分析结果
+     */
+    public AnalysisResult analyzeFromNcbiMulti(List<String> accessions, String method) {
+        if (accessions == null || accessions.isEmpty()) {
+            throw new IllegalArgumentException("Accession Number 列表不能为空");
+        }
+        
+        System.out.println("正在从 NCBI 下载 " + accessions.size() + " 个序列...");
+        String fastaContent = ncbiDownloader.downloadMultipleSequences(accessions);
+        System.out.println("NCBI 批量下载完成，总字符数：" + fastaContent.length());
+        return analyze(fastaContent, method);
+    }
+
+    /**
+     * 验证 NCBI Accession Number 是否有效
+     *
+     * @param accession Accession Number
+     * @return true 如果有效，false 如果无效
+     */
+    public boolean validateNcbiAccession(String accession) {
+        try {
+            ncbiDownloader.validateAccession(accession);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 }

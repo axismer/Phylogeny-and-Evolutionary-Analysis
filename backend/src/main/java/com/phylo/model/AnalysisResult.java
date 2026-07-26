@@ -9,16 +9,19 @@ public class AnalysisResult {
 
     /** 序列基本信息列表 */
     private List<SequenceInfo> sequences;
-
+    
     /** 距离矩阵 */
     private DistanceMatrix distanceMatrix;
-
-    /** Newick格式的系统发育树 */
+    
+    /** Newick 格式的系统发育树 */
     private String tree;
-
+    
     /** 使用的建树方法 */
     private String method;
-
+    
+    /** R 绘制的环状树图片 (base64) */
+    private String circularTreeImage;
+    
     public AnalysisResult() {
     }
 
@@ -65,6 +68,14 @@ public class AnalysisResult {
 
     public void setMethod(String method) {
         this.method = method;
+    }
+
+    public String getCircularTreeImage() {
+        return circularTreeImage;
+    }
+
+    public void setCircularTreeImage(String circularTreeImage) {
+        this.circularTreeImage = circularTreeImage;
     }
 
     /**

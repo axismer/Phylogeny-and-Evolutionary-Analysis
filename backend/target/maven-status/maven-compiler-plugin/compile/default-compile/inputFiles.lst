@@ -2,6 +2,7 @@ C:\Users\27353\Desktop\PhyloPlatform\backend\src\main\java\com\phylo\repository\
 C:\Users\27353\Desktop\PhyloPlatform\backend\src\main\java\com\phylo\repository\UserRepository.java
 C:\Users\27353\Desktop\PhyloPlatform\backend\src\main\java\com\phylo\algorithm\KmerDistance.java
 C:\Users\27353\Desktop\PhyloPlatform\backend\src\main\java\com\phylo\controller\AuthController.java
+C:\Users\27353\Desktop\PhyloPlatform\backend\src\main\java\com\phylo\service\NcbiSequenceDownloader.java
 C:\Users\27353\Desktop\PhyloPlatform\backend\src\main\java\com\phylo\controller\PhyloController.java
 C:\Users\27353\Desktop\PhyloPlatform\backend\src\main\java\com\phylo\service\PhyloService.java
 C:\Users\27353\Desktop\PhyloPlatform\backend\src\main\java\com\phylo\algorithm\PDistance.java
@@ -16,5 +17,6 @@ C:\Users\27353\Desktop\PhyloPlatform\backend\src\main\java\com\phylo\model\User.
 C:\Users\27353\Desktop\PhyloPlatform\backend\src\main\java\com\phylo\PhyloApplication.java
 C:\Users\27353\Desktop\PhyloPlatform\backend\src\main\java\com\phylo\model\AnalysisRecord.java
 C:\Users\27353\Desktop\PhyloPlatform\backend\src\main\java\com\phylo\utils\FileUtils.java
+C:\Users\27353\Desktop\PhyloPlatform\backend\src\main\java\com\phylo\service\RAnalysisService.java
 C:\Users\27353\Desktop\PhyloPlatform\backend\src\main\java\com\phylo\repository\AnalysisRecordRepository.java
 C:\Users\27353\Desktop\PhyloPlatform\backend\src\main\java\com\phylo\model\DistanceMatrix.java
