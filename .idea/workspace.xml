@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="090d3575-ebdd-431b-9c81-3b4486e09904" name="Changes" comment="前后端合并">
+      <change afterPath="$PROJECT_DIR$/phylo-platform" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Phylogeny-and-Evolutionary-Analysis.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/Rplots.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/.gradle/9.2.0/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/.gradle/9.2.0/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/.gradle/9.2.0/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/.gradle/9.2.0/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/.gradle/9.2.0/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/.gradle/9.2.0/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/.gradle/9.2.0/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/.gradle/9.2.0/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/.gradle/9.2.0/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/.gradle/9.2.0/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/PhyloApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/AnalysisRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/PhyloPlatformApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/config/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/config/PhyloDataProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/config/PhyloRProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/config/WebConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/controller/AnalysisController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/controller/AnalysisTaskController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/controller/AnalysisTaskExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/controller/RAnalysisController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/controller/SequenceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/dto/AnalysisRunResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/dto/AnalysisTaskResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/dto/CreateAnalysisTaskRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/dto/DistanceMatrixResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/dto/FastaRecordSummary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/dto/RAnalysisRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/dto/RAnalysisResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/dto/RAnalysisResultJson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/dto/TreeResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/model/DistanceMatrix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/model/FastaRecord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/model/PhylogeneticTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/model/TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/service/fasta/FastaParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/service/fasta/FastaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/service/matrix/DistanceMatrixCsvReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/service/matrix/DistanceMatrixCsvWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/service/matrix/DistanceMatrixService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/service/matrix/PDistanceCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/service/r/ProcessBuilderRPhylogeneticAnalysisService$StreamGobbler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/service/r/ProcessBuilderRPhylogeneticAnalysisService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/service/r/RPhylogeneticAnalysisService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/service/task/AnalysisTaskService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/service/task/DefaultAnalysisTaskService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/service/task/TaskPathSecurity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/service/tree/NewickWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/service/tree/TreeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/service/tree/UpgmaBuilder$Cluster.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/main/com/phylo/platform/service/tree/UpgmaBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/test/com/phylo/platform/controller/AnalysisControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/test/com/phylo/platform/controller/AnalysisTaskControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/test/com/phylo/platform/controller/RAnalysisControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/test/com/phylo/platform/service/fasta/FastaParserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/test/com/phylo/platform/service/matrix/DistanceMatrixCsvReaderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/test/com/phylo/platform/service/matrix/PDistanceCalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/test/com/phylo/platform/service/r/FrameworkV041BootRegressionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/test/com/phylo/platform/service/r/RAnalysisResultJsonTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/test/com/phylo/platform/service/task/FrameworkV042TaskRegressionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/test/com/phylo/platform/service/task/TaskPathSecurityTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/test/com/phylo/platform/service/tree/NewickWriterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/classes/java/test/com/phylo/platform/service/tree/UpgmaBuilderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/reports/tests/test/classes/com.phylo.platform.controller.AnalysisTaskControllerTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/reports/tests/test/packages/com.phylo.platform.controller.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/resources/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/test-results/test/TEST-com.phylo.platform.controller.AnalysisTaskControllerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/config/DataInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/controller/PhyloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/controller/PhyloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/platform/PhyloPlatformApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/platform/PhyloPlatformApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/platform/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/platform/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/platform/config/PhyloDataProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/platform/config/PhyloDataProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/platform/controller/AnalysisTaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/platform/controller/AnalysisTaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/platform/dto/AnalysisTaskResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/platform/dto/AnalysisTaskResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/platform/service/task/AnalysisTaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/platform/service/task/AnalysisTaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/platform/service/task/DefaultAnalysisTaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/backend/src/main/java/com/phylo/platform/service/task/DefaultAnalysisTaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/test/java/com/phylo/platform/controller/AnalysisControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/test/java/com/phylo/platform/controller/AnalysisTaskControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/test/java/com/phylo/platform/controller/RAnalysisControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/test/java/com/phylo/platform/service/fasta/FastaParserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/test/java/com/phylo/platform/service/matrix/DistanceMatrixCsvReaderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/test/java/com/phylo/platform/service/matrix/PDistanceCalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/test/java/com/phylo/platform/service/r/FrameworkV041BootRegressionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/test/java/com/phylo/platform/service/r/RAnalysisResultJsonTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/test/java/com/phylo/platform/service/task/FrameworkV042TaskRegressionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/test/java/com/phylo/platform/service/task/TaskPathSecurityTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/test/java/com/phylo/platform/service/tree/NewickWriterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/src/test/java/com/phylo/platform/service/tree/UpgmaBuilderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/backend/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/target/classes/com/phylo/config/DataInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/target/classes/com/phylo/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/backend/target/classes/com/phylo/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/target/classes/com/phylo/controller/PhyloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/backend/target/classes/com/phylo/controller/PhyloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/target/classes/com/phylo/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/backend/target/classes/com/phylo/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/backend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/aligned/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/matrix/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/matrix/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/raw/Acinetobacter baumannii16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/raw/Bacillus subtilis16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/raw/Bacillus thuringiensis 16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/raw/Bacillus velezensis16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/raw/E.coli16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/raw/Helicobacter pylori 16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/raw/Klebsiella pneumoniae 16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/raw/Listeria monocytogenes16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/raw/Mycobacterium tuberculosis16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/raw/Pseudomonas aeruginosa16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/raw/Pseudomonas putida16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/raw/Salmonella enterica16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/raw/Staphylococcus aureus16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/raw/Streptococcus pneumoniae16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/raw1/H3N2_NA_20_test.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/tree/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/data/tree/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/docs/API.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/docs/PROJECT_RETROSPECTIVE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/docs/PROJECT_STRUCTURE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/docs/frontend_integration_guide.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/frontend/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/frontend/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/frontend/src/assets/hero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/frontend/src/components/MatrixTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/frontend/src/components/MatrixTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/frontend/src/components/TreeViewer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/frontend/src/components/TreeViewer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/frontend/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/frontend/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/frontend/src/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/frontend/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/frontend/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/frontend/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/frontend/src/views/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/phylo_db/analysis_task.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/phylo_db/dataset.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/phylo_db/sequence.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/phylo_db/species.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/phylo_db/user.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/Rplots.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/phylo-platform/r-analysis/Rplots.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/STABLE_H3N2_HA_PIPELINE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/backups/tree.nwk.bak_nobootstrap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/data/ncbi_h3n2_ha/accession_ids.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/data/ncbi_h3n2_ha/esummary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/data/ncbi_h3n2_ha/h3n2_ha.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/data/ncbi_h3n2_ha/ncbi_metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/data/ncbi_h3n2_ha/ncbi_raw.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/data/ncbi_h3n2_ha/ncbi_raw.gb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/misc/Rplots.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/misc/scripts_Rplots.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/misc/tmp_aplot_0.2.9.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/ggtree_install_failure.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/h3n2_real/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/h3n2_real/circular_tree_distance.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/h3n2_real/circular_tree_distance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/h3n2_real/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/h3n2_real/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/h3n2_real/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/h3n2_real/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/probes/_probe_circ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/probes/_probe_fan2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/probes/_probe_full_ggsave.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/probes/_probe_print.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/probes/_probe_rect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/probes/_probe_tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/root_run/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/root_run/circular_tree.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/root_run/circular_tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/root_run/circular_tree_distance.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/root_run/circular_tree_distance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/root_run/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/root_run/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/root_run/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/root_run/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/root_run/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/root_run/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/root_run/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/smoke/_smoke_aln.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/output/smoke/_smoke_in.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/tools/_smoke.fa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/tools/_smoke_muscle.fa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/tools/mafft-7.526-win64-signed.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/tools/mafft-extract/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/2026-07-24/tools/mafft-fresh.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/archive/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/config/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/benchmarks/bacteria_16s/_ncbi_raw.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/benchmarks/bacteria_16s/bacteria_16s.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/benchmarks/bacteria_16s/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/benchmarks/fungi_its/SOURCE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/benchmarks/fungi_its/_ncbi_raw.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/benchmarks/fungi_its/fungi.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/benchmarks/fungi_its/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/benchmarks/h3n2_ha/h3n2_ha_unaligned.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/benchmarks/h3n2_ha/ncbi_metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/benchmarks/h3n2_ha/sampling_report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/demo/circular/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/demo/circular/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/demo/example_metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/demo/example_metadata_6tips.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/real/bacteria_16s_user/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/real/bacteria_16s_user/SOURCE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/real/bacteria_16s_user/_ncbi_download.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/real/bacteria_16s_user/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/real/bacteria_16s_user/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/data/smoke/example.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/analysis_result_contract.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/bacteria_real_dataset_validation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/bacteria_taxonomy_level.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/bacteria_validation_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/cleanup_plan.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/deprecated_components.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/directory_audit.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/error_code_reference.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/error_handling_audit.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/framework_architecture_audit.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/framework_freeze_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/framework_hardening_v0.2_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/framework_progress_report_v0.1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/framework_test_matrix.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/framework_test_report_v0.2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/framework_v03_baseline_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/framework_v03_implementation_plan.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/framework_v03_p1_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/framework_v03_p2_plan.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/framework_v03_p2_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/framework_v03_p3_plan.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/framework_v03_p3_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/framework_v03_p4_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/framework_v03_p5_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/framework_v04_integration_plan.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/migration_plan.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/multi_organism_framework.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/new_organism_development_guide.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/organism_extension_guide.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/plugin_contract_audit_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/plugin_registry_design.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/docs/strategy_runner_design.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/examples/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/examples/_smoke_bacteria.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/0673cb72-2ce3-4400-9bed-0094d6ec07fa/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/66dc3f73-e13c-4f1d-80d3-b2de8b8ea19f/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/6d62f0e5-a4fe-4c65-8788-dba04b8b8611/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/6d62f0e5-a4fe-4c65-8788-dba04b8b8611/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/965af817-8975-4082-8145-e8768863e256/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/c609042e-26f1-4d6c-a59f-addb00de4be1/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/c609042e-26f1-4d6c-a59f-addb00de4be1/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/c9b860bd-b895-4f90-893c-dec79bcd2e71/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/c9b860bd-b895-4f90-893c-dec79bcd2e71/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/df8fdd21-74f0-476d-9394-3645c6437807/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/df8fdd21-74f0-476d-9394-3645c6437807/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/e0f545e2-b91d-4745-84e8-05f46c07d641/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/templates/archaea_metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/templates/bacteria_metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/templates/eukaryote_metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/templates/fungi_metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/input/templates/virus_metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/metadata/metadata_schema.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/benchmarks/h3n2_ha/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/benchmarks/h3n2_ha/benchmark_report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/benchmarks/h3n2_ha/circular_tree_distance.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/benchmarks/h3n2_ha/circular_tree_distance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/benchmarks/h3n2_ha/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/benchmarks/h3n2_ha/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/benchmarks/h3n2_ha/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/benchmarks/h3n2_ha/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/benchmarks/h3n2_ha/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/benchmarks/h3n2_ha/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/benchmarks/h3n2_ha/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/demos/circular/circular_tree.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/demos/circular/circular_tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/task_state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/01833c73-2c01-4b2d-b684-3025e32c361c/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/0673cb72-2ce3-4400-9bed-0094d6ec07fa/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/0673cb72-2ce3-4400-9bed-0094d6ec07fa/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/0673cb72-2ce3-4400-9bed-0094d6ec07fa/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/0673cb72-2ce3-4400-9bed-0094d6ec07fa/task_state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/66dc3f73-e13c-4f1d-80d3-b2de8b8ea19f/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/66dc3f73-e13c-4f1d-80d3-b2de8b8ea19f/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/66dc3f73-e13c-4f1d-80d3-b2de8b8ea19f/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/66dc3f73-e13c-4f1d-80d3-b2de8b8ea19f/task_state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/task_state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/66e580a4-7376-48d5-9647-4310f8c074dc/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/task_state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6bf0870f-6197-4c85-b86d-f276f4a3312f/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6d62f0e5-a4fe-4c65-8788-dba04b8b8611/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6d62f0e5-a4fe-4c65-8788-dba04b8b8611/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6d62f0e5-a4fe-4c65-8788-dba04b8b8611/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6d62f0e5-a4fe-4c65-8788-dba04b8b8611/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6d62f0e5-a4fe-4c65-8788-dba04b8b8611/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6d62f0e5-a4fe-4c65-8788-dba04b8b8611/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6d62f0e5-a4fe-4c65-8788-dba04b8b8611/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6d62f0e5-a4fe-4c65-8788-dba04b8b8611/task_state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6d62f0e5-a4fe-4c65-8788-dba04b8b8611/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6d62f0e5-a4fe-4c65-8788-dba04b8b8611/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/6d62f0e5-a4fe-4c65-8788-dba04b8b8611/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/965af817-8975-4082-8145-e8768863e256/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/965af817-8975-4082-8145-e8768863e256/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/965af817-8975-4082-8145-e8768863e256/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/965af817-8975-4082-8145-e8768863e256/task_state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_16s_run/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_16s_run/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_16s_run/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_16s_run/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_16s_run/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_16s_run/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_16s_run/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_16s_run/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/missing_fields/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/missing_fields/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/missing_fields/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/tip_mismatch/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/tip_mismatch/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/tip_mismatch/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/tip_mismatch/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/tip_mismatch/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/tip_mismatch/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/tip_mismatch/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/valid/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/valid/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/valid/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/valid/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/valid/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/valid/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/valid/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/valid/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_error_status_fix/valid/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_real_user_run/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_real_user_run/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_real_user_run/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_real_user_run/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_real_user_run/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_real_user_run/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_real_user_run/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_real_user_run/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_real_user_run/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_real_user_run/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_genus/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_genus/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_genus/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_genus/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_genus/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_genus/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_genus/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_genus/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_genus/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_genus/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_legacy/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_legacy/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_legacy/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_legacy/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_legacy/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_legacy/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_legacy/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_legacy/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_legacy/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_taxonomy_level_legacy/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/empty/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/empty/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/illegal_dna/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/illegal_dna/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/missing_fields/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/missing_fields/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/tip_mismatch/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/tip_mismatch/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/tip_mismatch/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/tip_mismatch/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/tip_mismatch/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/tip_mismatch/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/tip_mismatch/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/too_few/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/too_few/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/valid/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/valid/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/valid/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/valid/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/valid/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/valid/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/valid/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/valid/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/valid/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/virus_smoke/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/virus_smoke/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/virus_smoke/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/virus_smoke/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/virus_smoke/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/bacteria_validation/virus_smoke/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case1_virus_valid/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case1_virus_valid/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case1_virus_valid/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case1_virus_valid/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case1_virus_valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case1_virus_valid/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case1_virus_valid/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case1_virus_valid/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case1_virus_valid/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case1_virus_valid/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case2_bacteria_valid/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case2_bacteria_valid/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case2_bacteria_valid/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case2_bacteria_valid/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case2_bacteria_valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case2_bacteria_valid/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case2_bacteria_valid/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case2_bacteria_valid/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case2_bacteria_valid/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case2_bacteria_valid/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case3_fungi_valid/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case3_fungi_valid/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case3_fungi_valid/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case3_fungi_valid/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case3_fungi_valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case3_fungi_valid/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case3_fungi_valid/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case3_fungi_valid/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case3_fungi_valid/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case3_fungi_valid/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case4_unknown_organism/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case4_unknown_organism/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case4_unknown_organism/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case5_invalid_fasta/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case5_invalid_fasta/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case5_invalid_fasta/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case6_missing_metadata/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case6_missing_metadata/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/boot_v041_regression/case6_missing_metadata/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c609042e-26f1-4d6c-a59f-addb00de4be1/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c609042e-26f1-4d6c-a59f-addb00de4be1/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c609042e-26f1-4d6c-a59f-addb00de4be1/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c609042e-26f1-4d6c-a59f-addb00de4be1/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c609042e-26f1-4d6c-a59f-addb00de4be1/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c609042e-26f1-4d6c-a59f-addb00de4be1/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c609042e-26f1-4d6c-a59f-addb00de4be1/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c609042e-26f1-4d6c-a59f-addb00de4be1/task_state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c609042e-26f1-4d6c-a59f-addb00de4be1/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c609042e-26f1-4d6c-a59f-addb00de4be1/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c609042e-26f1-4d6c-a59f-addb00de4be1/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c9b860bd-b895-4f90-893c-dec79bcd2e71/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c9b860bd-b895-4f90-893c-dec79bcd2e71/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c9b860bd-b895-4f90-893c-dec79bcd2e71/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c9b860bd-b895-4f90-893c-dec79bcd2e71/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c9b860bd-b895-4f90-893c-dec79bcd2e71/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c9b860bd-b895-4f90-893c-dec79bcd2e71/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c9b860bd-b895-4f90-893c-dec79bcd2e71/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c9b860bd-b895-4f90-893c-dec79bcd2e71/task_state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c9b860bd-b895-4f90-893c-dec79bcd2e71/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c9b860bd-b895-4f90-893c-dec79bcd2e71/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/c9b860bd-b895-4f90-893c-dec79bcd2e71/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/df8fdd21-74f0-476d-9394-3645c6437807/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/df8fdd21-74f0-476d-9394-3645c6437807/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/df8fdd21-74f0-476d-9394-3645c6437807/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/df8fdd21-74f0-476d-9394-3645c6437807/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/df8fdd21-74f0-476d-9394-3645c6437807/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/df8fdd21-74f0-476d-9394-3645c6437807/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/df8fdd21-74f0-476d-9394-3645c6437807/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/df8fdd21-74f0-476d-9394-3645c6437807/task_state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/df8fdd21-74f0-476d-9394-3645c6437807/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/df8fdd21-74f0-476d-9394-3645c6437807/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/df8fdd21-74f0-476d-9394-3645c6437807/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/e0f545e2-b91d-4745-84e8-05f46c07d641/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/e0f545e2-b91d-4745-84e8-05f46c07d641/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/e0f545e2-b91d-4745-84e8-05f46c07d641/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/e0f545e2-b91d-4745-84e8-05f46c07d641/task_state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/example/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/example/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/run.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/task_state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/f9cac4a0-2cca-4ffd-b4fa-e65b9a8a8b99/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_smoke_bacteria/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/_smoke_virus_invalid/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/bacteria_invalid_metadata/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/bacteria_tip_mismatch/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/bacteria_tip_mismatch/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/bacteria_tip_mismatch/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/bacteria_tip_mismatch/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/bacteria_tip_mismatch/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/bacteria_valid/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/bacteria_valid/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/bacteria_valid/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/bacteria_valid/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/bacteria_valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/bacteria_valid/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/bacteria_valid/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/bacteria_valid/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/virus_invalid_fasta/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/virus_metadata_mismatch/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/virus_metadata_mismatch/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/virus_metadata_mismatch/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/virus_metadata_mismatch/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/virus_metadata_mismatch/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/virus_valid/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/virus_valid/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/virus_valid/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/virus_valid/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/virus_valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/virus_valid/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/virus_valid/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v01_regression/virus_valid/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/archaea_not_implemented/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/bacteria_empty/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/bacteria_illegal_dna/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/bacteria_invalid_metadata/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/bacteria_tip_mismatch/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/bacteria_tip_mismatch/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/bacteria_tip_mismatch/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/bacteria_tip_mismatch/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/bacteria_tip_mismatch/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/bacteria_too_few/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/bacteria_valid/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/bacteria_valid/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/bacteria_valid/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/bacteria_valid/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/bacteria_valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/bacteria_valid/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/bacteria_valid/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/bacteria_valid/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/virus_empty/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/virus_illegal_dna/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/virus_invalid_fasta/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/virus_metadata_mismatch/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/virus_metadata_mismatch/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/virus_metadata_mismatch/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/virus_metadata_mismatch/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/virus_metadata_mismatch/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/virus_too_few/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/virus_valid/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/virus_valid/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/virus_valid/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/virus_valid/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/virus_valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/virus_valid/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/virus_valid/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v02_regression/virus_valid/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/bacteria_valid/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/bacteria_valid/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/bacteria_valid/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/bacteria_valid/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/bacteria_valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/bacteria_valid/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/bacteria_valid/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/bacteria_valid/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/unknown_organism/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/virus_empty/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/virus_tip_mismatch/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/virus_tip_mismatch/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/virus_tip_mismatch/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/virus_tip_mismatch/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/virus_tip_mismatch/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/virus_valid/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/virus_valid/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/virus_valid/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/virus_valid/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/virus_valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/virus_valid/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/virus_valid/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p1_regression/virus_valid/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/bacteria_bad_metadata/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/bacteria_missing_fasta/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/bacteria_valid/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/bacteria_valid/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/bacteria_valid/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/bacteria_valid/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/bacteria_valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/bacteria_valid/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/bacteria_valid/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/bacteria_valid/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/virus_bad_fasta/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/virus_missing_metadata/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/virus_valid/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/virus_valid/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/virus_valid/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/virus_valid/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/virus_valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/virus_valid/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/virus_valid/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p2_regression/virus_valid/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/archaea_plugin_stub/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/bacteria_plugin_valid/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/bacteria_plugin_valid/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/bacteria_plugin_valid/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/bacteria_plugin_valid/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/bacteria_plugin_valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/bacteria_plugin_valid/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/bacteria_plugin_valid/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/bacteria_plugin_valid/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/unknown_organism/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/virus_plugin_valid/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/virus_plugin_valid/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/virus_plugin_valid/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/virus_plugin_valid/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/virus_plugin_valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/virus_plugin_valid/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/virus_plugin_valid/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p3_regression/virus_plugin_valid/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p4_regression/bacteria_pipeline/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p4_regression/bacteria_pipeline/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p4_regression/bacteria_pipeline/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p4_regression/bacteria_pipeline/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p4_regression/bacteria_pipeline/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p4_regression/bacteria_pipeline/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p4_regression/bacteria_pipeline/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p4_regression/bacteria_pipeline/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p4_regression/summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p4_regression/unknown_type/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p4_regression/virus_pipeline/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p4_regression/virus_pipeline/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p4_regression/virus_pipeline/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p4_regression/virus_pipeline/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p4_regression/virus_pipeline/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p4_regression/virus_pipeline/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p4_regression/virus_pipeline/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p4_regression/virus_pipeline/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p5_regression/fungi_empty/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p5_regression/fungi_illegal_dna/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p5_regression/fungi_tip_mismatch/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p5_regression/fungi_tip_mismatch/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p5_regression/fungi_tip_mismatch/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p5_regression/fungi_tip_mismatch/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p5_regression/fungi_tip_mismatch/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p5_regression/fungi_too_few/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p5_regression/fungi_valid/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p5_regression/fungi_valid/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p5_regression/fungi_valid/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p5_regression/fungi_valid/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p5_regression/fungi_valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p5_regression/fungi_valid/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p5_regression/fungi_valid/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p5_regression/fungi_valid/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p5_regression/summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/framework_v03_p5_regression/unknown_organism/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/fungi_its_benchmark/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/fungi_its_benchmark/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/fungi_its_benchmark/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/fungi_its_benchmark/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/fungi_its_benchmark/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/fungi_its_benchmark/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/fungi_its_benchmark/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/fungi_its_benchmark/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/migration_verify/analysis_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/migration_verify/circular_tree_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/migration_verify/circular_tree_final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/migration_verify/distance_matrix.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/migration_verify/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/migration_verify/ncbi_subset.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/migration_verify/subset.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/migration_verify/tree.nwk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/migration_verify/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/migration_verify/visualization_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/output/tasks/plugin_contract_audit/summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/demo/plot_circular_tree.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/demo/prepare_circular_demo.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/prep/parse_ncbi_genbank_ha.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/prep/prepare_bacteria_16s_benchmark.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/prep/prepare_bacteria_16s_user_real.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/prep/prepare_fungi_its_benchmark.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/prep/prepare_fungi_regression_fixtures.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/prep/prepare_h3n2_ha_benchmark.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/prep/prepare_platform_fasta.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/prep/prepare_virus_regression_fixtures.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/prep/report_h3n2_benchmark.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/runners/run_circular_demo.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/runners/run_framework_regression.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/runners/run_framework_v03_p1_regression.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/runners/run_framework_v03_p2_regression.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/runners/run_framework_v03_p3_regression.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/runners/run_framework_v03_p4_regression.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/runners/run_framework_v03_p5_regression.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/runners/run_ggtree_viz.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/runners/run_h3n2_ha_benchmark.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/runners/run_plugin_contract_audit.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/runners/run_test_example.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/scripts/runners/run_test_real_data.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/bacteria/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/bacteria/empty/empty.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/bacteria/empty/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/bacteria/illegal_dna/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/bacteria/illegal_dna/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/bacteria/missing_fields/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/bacteria/missing_fields/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/bacteria/tip_mismatch/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/bacteria/tip_mismatch/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/bacteria/too_few/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/bacteria/too_few/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/bacteria/valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/bacteria/valid/valid.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/bacteria/valid_ranked/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/bacteria/valid_ranked/valid.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/fixtures/h3n2_na_20.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/fixtures/platform_16s.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/fixtures/platform_16s_equal_len.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/fungi/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/fungi/empty/empty.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/fungi/illegal_dna/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/fungi/illegal_dna/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/fungi/tip_mismatch/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/fungi/tip_mismatch/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/fungi/too_few/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/fungi/too_few/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/fungi/valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/fungi/valid/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/output/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/virus/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/virus/empty/empty.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/virus/illegal_dna/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/virus/invalid_fasta/bad.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/virus/metadata_mismatch/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/virus/metadata_mismatch/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/virus/too_few/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/virus/valid/metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/test-data/virus/valid/sequences.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/r-analysis/tools/mafft-win/testdata.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/数据/Acinetobacter baumannii16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/数据/Bacillus subtilis16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/数据/Bacillus thuringiensis 16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/数据/Bacillus velezensis16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/数据/E.coli16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/数据/Helicobacter pylori 16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/数据/Klebsiella pneumoniae 16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/数据/Listeria monocytogenes16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/数据/Mycobacterium tuberculosis16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/数据/Pseudomonas aeruginosa16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/数据/Pseudomonas putida16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/数据/Salmonella enterica16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/数据/Staphylococcus aureus16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phylo-platform/数据/Streptococcus pneumoniae16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据/Acinetobacter baumannii16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据/Bacillus subtilis16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据/Bacillus thuringiensis 16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据/Bacillus velezensis16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据/E.coli16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据/Helicobacter pylori 16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据/Klebsiella pneumoniae 16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据/Listeria monocytogenes16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据/Mycobacterium tuberculosis16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据/Pseudomonas aeruginosa16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据/Pseudomonas putida16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据/Salmonella enterica16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据/Staphylococcus aureus16S.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据/Streptococcus pneumoniae16S.fasta" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="增加热图与NCBI功能" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;13881912421&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/axismer/Phylogeny-and-Evolutionary-Analysis.git&quot;,
+    &quot;accountId&quot;: &quot;a2df5bcd-954a-4d0b-872a-698d5f5ad765&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.2176376477873818" />
+      <entry key="MS500" value="1.7717715196903918" />
+      <entry key="S2" value="2.86547381475981" />
+      <entry key="S5" value="3.8483130850215077" />
+      <entry key="S10" value="4.357333389400511" />
+      <entry key="S30" value="4.843998860227108" />
+      <entry key="S60" value="5.67581707210979" />
+      <entry key="M2" value="7.993385688360699" />
+      <entry key="M5" value="12.847133534530473" />
+      <entry key="M10" value="16.11920193028622" />
+      <entry key="M15" value="17.531572008117003" />
+      <entry key="M30" value="19.147745112781518" />
+      <entry key="H1" value="20.04214484879763" />
+      <entry key="H2" value="20.512844246391634" />
+      <entry key="H4" value="20.754326784033044" />
+      <entry key="D1" value="20.958760133809243" />
+      <entry key="W1" value="20.99410133887048" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.40320308856304055" />
+      <entry key="MS500" value="1.4787287809042666" />
+      <entry key="S2" value="2.746759202807654" />
+      <entry key="S5" value="3.7866906971480097" />
+      <entry key="S10" value="4.323027829380055" />
+      <entry key="S30" value="4.831625372377923" />
+      <entry key="S60" value="5.669411024894687" />
+      <entry key="M2" value="7.9899312133753195" />
+      <entry key="M5" value="12.845492842200853" />
+      <entry key="M10" value="16.11828401942601" />
+      <entry key="M15" value="17.530930921973" />
+      <entry key="M30" value="19.147407580646565" />
+      <entry key="H1" value="20.04197131840354" />
+      <entry key="H2" value="20.512756219227278" />
+      <entry key="H4" value="20.754282445677028" />
+      <entry key="D1" value="20.95875269816756" />
+      <entry key="W1" value="20.994100275500813" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3GtNFcBFlAl6XuAYGJpC2j4bZ80" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev-2&quot;,
+    &quot;git.auto.fetch.suggestion.counter&quot;: &quot;1&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/27353/Desktop/Phylogeny-and-Evolutionary-Analysis&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;qoder.settings.plugin&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\IntelliJ IDEA 2026.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="PhyloApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="phylo-backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.phylo.PhyloApplication" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/phylo-platform/backend" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-63390994e64e-intellij.indexing.shared.core-IU-262.8665.258" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.8665.258" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Physical" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="090d3575-ebdd-431b-9c81-3b4486e09904" name="Changes" comment="" />
+      <created>1784786805551</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1784786805551</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/feature/phylogeny" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加热图分析，NCBI下载功能" />
+    <MESSAGE value="前后端功能合并" />
+    <MESSAGE value="前后端合并" />
+    <option name="LAST_COMMIT_MESSAGE" value="前后端合并" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

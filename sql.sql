@@ -85,7 +85,6 @@ create table user
    uname                varchar(50),
    upassword            varchar(255),
    nickname             varchar(50),
-   role                 varchar(10),
    email                varchar(100),
    primary key (uid)
 );
